@@ -1,0 +1,6202 @@
+[
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 0, 
+  "times": [
+   {
+    "cold": 3.0974318981170654, 
+    "warm": 0.07281303405761719, 
+    "command": "du -scm test0"
+   }, 
+   {
+    "cold": 11.795717000961304, 
+    "warm": 0.4278249740600586, 
+    "command": "tar -cf test0.tar test0"
+   }, 
+   {
+    "cold": 0.15265893936157227, 
+    "warm": -10, 
+    "command": "pigz test0.tar"
+   }, 
+   {
+    "cold": 2.061918020248413, 
+    "warm": 0.07994508743286133, 
+    "command": "chmod +w -R test0/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0325019359588623, 
+    "warm": -10, 
+    "command": "git clone test0 test0.clone"
+   }, 
+   {
+    "cold": 35.23529601097107, 
+    "warm": -10, 
+    "command": "cd test0.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.158185958862305, 
+    "warm": -10, 
+    "command": "cd test0.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6956758499145508, 
+    "warm": 0.056527137756347656, 
+    "command": "du -scm test0.clone"
+   }, 
+   {
+    "cold": 3.9588429927825928, 
+    "warm": -10, 
+    "command": "rm -rf test0"
+   }, 
+   {
+    "cold": 1.0230119228363037, 
+    "warm": -10, 
+    "command": "rm -rf test0.clone"
+   }, 
+   {
+    "cold": 1.0135841369628906, 
+    "warm": -10, 
+    "command": "tar -xzf test0.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 1, 
+  "times": [
+   {
+    "cold": 3.6088240146636963, 
+    "warm": 0.07565498352050781, 
+    "command": "du -scm test1"
+   }, 
+   {
+    "cold": 12.080541133880615, 
+    "warm": 0.2833089828491211, 
+    "command": "tar -cf test1.tar test1"
+   }, 
+   {
+    "cold": 0.13545608520507812, 
+    "warm": -10, 
+    "command": "pigz test1.tar"
+   }, 
+   {
+    "cold": 2.225503921508789, 
+    "warm": 0.07875418663024902, 
+    "command": "chmod +w -R test1/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.506943941116333, 
+    "warm": -10, 
+    "command": "git clone test1 test1.clone"
+   }, 
+   {
+    "cold": 33.5888409614563, 
+    "warm": -10, 
+    "command": "cd test1.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.33986806869507, 
+    "warm": -10, 
+    "command": "cd test1.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6490459442138672, 
+    "warm": 0.05367302894592285, 
+    "command": "du -scm test1.clone"
+   }, 
+   {
+    "cold": 3.769946813583374, 
+    "warm": -10, 
+    "command": "rm -rf test1"
+   }, 
+   {
+    "cold": 1.050403118133545, 
+    "warm": -10, 
+    "command": "rm -rf test1.clone"
+   }, 
+   {
+    "cold": 0.7411198616027832, 
+    "warm": -10, 
+    "command": "tar -xzf test1.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 2, 
+  "times": [
+   {
+    "cold": 3.576824903488159, 
+    "warm": 0.08601808547973633, 
+    "command": "du -scm test2"
+   }, 
+   {
+    "cold": 12.515330076217651, 
+    "warm": 0.2546360492706299, 
+    "command": "tar -cf test2.tar test2"
+   }, 
+   {
+    "cold": 0.11896896362304688, 
+    "warm": -10, 
+    "command": "pigz test2.tar"
+   }, 
+   {
+    "cold": 2.6104681491851807, 
+    "warm": 0.08527183532714844, 
+    "command": "chmod +w -R test2/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1854958534240723, 
+    "warm": -10, 
+    "command": "git clone test2 test2.clone"
+   }, 
+   {
+    "cold": 35.13678789138794, 
+    "warm": -10, 
+    "command": "cd test2.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.06985592842102, 
+    "warm": -10, 
+    "command": "cd test2.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7044260501861572, 
+    "warm": 0.04445290565490723, 
+    "command": "du -scm test2.clone"
+   }, 
+   {
+    "cold": 3.7370378971099854, 
+    "warm": -10, 
+    "command": "rm -rf test2"
+   }, 
+   {
+    "cold": 1.0296049118041992, 
+    "warm": -10, 
+    "command": "rm -rf test2.clone"
+   }, 
+   {
+    "cold": 0.7832510471343994, 
+    "warm": -10, 
+    "command": "tar -xzf test2.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 3, 
+  "times": [
+   {
+    "cold": 3.6762399673461914, 
+    "warm": 0.07400298118591309, 
+    "command": "du -scm test3"
+   }, 
+   {
+    "cold": 11.60762095451355, 
+    "warm": 0.2554941177368164, 
+    "command": "tar -cf test3.tar test3"
+   }, 
+   {
+    "cold": 0.1390857696533203, 
+    "warm": -10, 
+    "command": "pigz test3.tar"
+   }, 
+   {
+    "cold": 2.4927070140838623, 
+    "warm": 0.08955097198486328, 
+    "command": "chmod +w -R test3/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.205247163772583, 
+    "warm": -10, 
+    "command": "git clone test3 test3.clone"
+   }, 
+   {
+    "cold": 34.988327980041504, 
+    "warm": -10, 
+    "command": "cd test3.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.791608095169067, 
+    "warm": -10, 
+    "command": "cd test3.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6851139068603516, 
+    "warm": 0.03586602210998535, 
+    "command": "du -scm test3.clone"
+   }, 
+   {
+    "cold": 4.267322063446045, 
+    "warm": -10, 
+    "command": "rm -rf test3"
+   }, 
+   {
+    "cold": 0.9391779899597168, 
+    "warm": -10, 
+    "command": "rm -rf test3.clone"
+   }, 
+   {
+    "cold": 0.7184860706329346, 
+    "warm": -10, 
+    "command": "tar -xzf test3.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 4, 
+  "times": [
+   {
+    "cold": 3.932945966720581, 
+    "warm": 0.07493805885314941, 
+    "command": "du -scm test4"
+   }, 
+   {
+    "cold": 12.124377965927124, 
+    "warm": 0.25571703910827637, 
+    "command": "tar -cf test4.tar test4"
+   }, 
+   {
+    "cold": 0.13264894485473633, 
+    "warm": -10, 
+    "command": "pigz test4.tar"
+   }, 
+   {
+    "cold": 1.9911110401153564, 
+    "warm": 0.0773310661315918, 
+    "command": "chmod +w -R test4/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0766730308532715, 
+    "warm": -10, 
+    "command": "git clone test4 test4.clone"
+   }, 
+   {
+    "cold": 34.08948087692261, 
+    "warm": -10, 
+    "command": "cd test4.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.293699026107788, 
+    "warm": -10, 
+    "command": "cd test4.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7481749057769775, 
+    "warm": 0.04341602325439453, 
+    "command": "du -scm test4.clone"
+   }, 
+   {
+    "cold": 4.106928825378418, 
+    "warm": -10, 
+    "command": "rm -rf test4"
+   }, 
+   {
+    "cold": 0.9154620170593262, 
+    "warm": -10, 
+    "command": "rm -rf test4.clone"
+   }, 
+   {
+    "cold": 0.981550931930542, 
+    "warm": -10, 
+    "command": "tar -xzf test4.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 5, 
+  "times": [
+   {
+    "cold": 3.4702560901641846, 
+    "warm": 0.07327699661254883, 
+    "command": "du -scm test5"
+   }, 
+   {
+    "cold": 11.546767950057983, 
+    "warm": 0.2793130874633789, 
+    "command": "tar -cf test5.tar test5"
+   }, 
+   {
+    "cold": 0.13010096549987793, 
+    "warm": -10, 
+    "command": "pigz test5.tar"
+   }, 
+   {
+    "cold": 2.078735113143921, 
+    "warm": 0.07538199424743652, 
+    "command": "chmod +w -R test5/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.826979875564575, 
+    "warm": -10, 
+    "command": "git clone test5 test5.clone"
+   }, 
+   {
+    "cold": 35.44314002990723, 
+    "warm": -10, 
+    "command": "cd test5.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.408372163772583, 
+    "warm": -10, 
+    "command": "cd test5.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6651291847229004, 
+    "warm": 0.055689096450805664, 
+    "command": "du -scm test5.clone"
+   }, 
+   {
+    "cold": 3.887500047683716, 
+    "warm": -10, 
+    "command": "rm -rf test5"
+   }, 
+   {
+    "cold": 0.8221750259399414, 
+    "warm": -10, 
+    "command": "rm -rf test5.clone"
+   }, 
+   {
+    "cold": 1.2472569942474365, 
+    "warm": -10, 
+    "command": "tar -xzf test5.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 6, 
+  "times": [
+   {
+    "cold": 3.232616901397705, 
+    "warm": 0.06928706169128418, 
+    "command": "du -scm test6"
+   }, 
+   {
+    "cold": 12.1768958568573, 
+    "warm": 0.24442195892333984, 
+    "command": "tar -cf test6.tar test6"
+   }, 
+   {
+    "cold": 0.16873788833618164, 
+    "warm": -10, 
+    "command": "pigz test6.tar"
+   }, 
+   {
+    "cold": 2.557677984237671, 
+    "warm": 0.0753631591796875, 
+    "command": "chmod +w -R test6/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5863430500030518, 
+    "warm": -10, 
+    "command": "git clone test6 test6.clone"
+   }, 
+   {
+    "cold": 34.883383989334106, 
+    "warm": -10, 
+    "command": "cd test6.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.476780891418457, 
+    "warm": -10, 
+    "command": "cd test6.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5950579643249512, 
+    "warm": 0.04958796501159668, 
+    "command": "du -scm test6.clone"
+   }, 
+   {
+    "cold": 3.692584991455078, 
+    "warm": -10, 
+    "command": "rm -rf test6"
+   }, 
+   {
+    "cold": 0.9595468044281006, 
+    "warm": -10, 
+    "command": "rm -rf test6.clone"
+   }, 
+   {
+    "cold": 0.868170976638794, 
+    "warm": -10, 
+    "command": "tar -xzf test6.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 7, 
+  "times": [
+   {
+    "cold": 3.4903910160064697, 
+    "warm": 0.08757209777832031, 
+    "command": "du -scm test7"
+   }, 
+   {
+    "cold": 11.910820007324219, 
+    "warm": 0.25341081619262695, 
+    "command": "tar -cf test7.tar test7"
+   }, 
+   {
+    "cold": 0.11775708198547363, 
+    "warm": -10, 
+    "command": "pigz test7.tar"
+   }, 
+   {
+    "cold": 2.229166030883789, 
+    "warm": 0.07474493980407715, 
+    "command": "chmod +w -R test7/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1241421699523926, 
+    "warm": -10, 
+    "command": "git clone test7 test7.clone"
+   }, 
+   {
+    "cold": 34.75491809844971, 
+    "warm": -10, 
+    "command": "cd test7.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.37399196624756, 
+    "warm": -10, 
+    "command": "cd test7.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.80336594581604, 
+    "warm": 0.05164003372192383, 
+    "command": "du -scm test7.clone"
+   }, 
+   {
+    "cold": 4.153738021850586, 
+    "warm": -10, 
+    "command": "rm -rf test7"
+   }, 
+   {
+    "cold": 0.9937529563903809, 
+    "warm": -10, 
+    "command": "rm -rf test7.clone"
+   }, 
+   {
+    "cold": 0.9220728874206543, 
+    "warm": -10, 
+    "command": "tar -xzf test7.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 8, 
+  "times": [
+   {
+    "cold": 3.5823869705200195, 
+    "warm": 0.07929015159606934, 
+    "command": "du -scm test8"
+   }, 
+   {
+    "cold": 13.054876804351807, 
+    "warm": 0.2582588195800781, 
+    "command": "tar -cf test8.tar test8"
+   }, 
+   {
+    "cold": 0.13793206214904785, 
+    "warm": -10, 
+    "command": "pigz test8.tar"
+   }, 
+   {
+    "cold": 2.0500681400299072, 
+    "warm": 0.07338690757751465, 
+    "command": "chmod +w -R test8/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.195664882659912, 
+    "warm": -10, 
+    "command": "git clone test8 test8.clone"
+   }, 
+   {
+    "cold": 35.63672399520874, 
+    "warm": -10, 
+    "command": "cd test8.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.723135948181152, 
+    "warm": -10, 
+    "command": "cd test8.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6385800838470459, 
+    "warm": 0.04647493362426758, 
+    "command": "du -scm test8.clone"
+   }, 
+   {
+    "cold": 3.9616949558258057, 
+    "warm": -10, 
+    "command": "rm -rf test8"
+   }, 
+   {
+    "cold": 0.8353128433227539, 
+    "warm": -10, 
+    "command": "rm -rf test8.clone"
+   }, 
+   {
+    "cold": 0.7679898738861084, 
+    "warm": -10, 
+    "command": "tar -xzf test8.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 9, 
+  "times": [
+   {
+    "cold": 4.1216959953308105, 
+    "warm": 0.0760960578918457, 
+    "command": "du -scm test9"
+   }, 
+   {
+    "cold": 12.550584077835083, 
+    "warm": 0.26123595237731934, 
+    "command": "tar -cf test9.tar test9"
+   }, 
+   {
+    "cold": 0.17151904106140137, 
+    "warm": -10, 
+    "command": "pigz test9.tar"
+   }, 
+   {
+    "cold": 2.150942802429199, 
+    "warm": 0.07422804832458496, 
+    "command": "chmod +w -R test9/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6888718605041504, 
+    "warm": -10, 
+    "command": "git clone test9 test9.clone"
+   }, 
+   {
+    "cold": 35.87126684188843, 
+    "warm": -10, 
+    "command": "cd test9.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.803505897521973, 
+    "warm": -10, 
+    "command": "cd test9.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.8146688938140869, 
+    "warm": 0.05479693412780762, 
+    "command": "du -scm test9.clone"
+   }, 
+   {
+    "cold": 3.914451837539673, 
+    "warm": -10, 
+    "command": "rm -rf test9"
+   }, 
+   {
+    "cold": 0.9435489177703857, 
+    "warm": -10, 
+    "command": "rm -rf test9.clone"
+   }, 
+   {
+    "cold": 0.8628220558166504, 
+    "warm": -10, 
+    "command": "tar -xzf test9.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 10, 
+  "times": [
+   {
+    "cold": 4.236910104751587, 
+    "warm": 0.08511710166931152, 
+    "command": "du -scm test10"
+   }, 
+   {
+    "cold": 12.37832498550415, 
+    "warm": 0.24075007438659668, 
+    "command": "tar -cf test10.tar test10"
+   }, 
+   {
+    "cold": 0.14177417755126953, 
+    "warm": -10, 
+    "command": "pigz test10.tar"
+   }, 
+   {
+    "cold": 2.686244010925293, 
+    "warm": 0.07603096961975098, 
+    "command": "chmod +w -R test10/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0168750286102295, 
+    "warm": -10, 
+    "command": "git clone test10 test10.clone"
+   }, 
+   {
+    "cold": 34.62790894508362, 
+    "warm": -10, 
+    "command": "cd test10.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.92937707901001, 
+    "warm": -10, 
+    "command": "cd test10.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6881790161132812, 
+    "warm": 0.05103588104248047, 
+    "command": "du -scm test10.clone"
+   }, 
+   {
+    "cold": 4.431037902832031, 
+    "warm": -10, 
+    "command": "rm -rf test10"
+   }, 
+   {
+    "cold": 0.8878710269927979, 
+    "warm": -10, 
+    "command": "rm -rf test10.clone"
+   }, 
+   {
+    "cold": 0.6929709911346436, 
+    "warm": -10, 
+    "command": "tar -xzf test10.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 11, 
+  "times": [
+   {
+    "cold": 3.468925952911377, 
+    "warm": 0.07361578941345215, 
+    "command": "du -scm test11"
+   }, 
+   {
+    "cold": 12.871317148208618, 
+    "warm": 0.39784884452819824, 
+    "command": "tar -cf test11.tar test11"
+   }, 
+   {
+    "cold": 0.1927790641784668, 
+    "warm": -10, 
+    "command": "pigz test11.tar"
+   }, 
+   {
+    "cold": 2.0537850856781006, 
+    "warm": 0.08965182304382324, 
+    "command": "chmod +w -R test11/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0731000900268555, 
+    "warm": -10, 
+    "command": "git clone test11 test11.clone"
+   }, 
+   {
+    "cold": 37.907252073287964, 
+    "warm": -10, 
+    "command": "cd test11.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.893224000930786, 
+    "warm": -10, 
+    "command": "cd test11.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6255500316619873, 
+    "warm": 0.0400090217590332, 
+    "command": "du -scm test11.clone"
+   }, 
+   {
+    "cold": 3.886502981185913, 
+    "warm": -10, 
+    "command": "rm -rf test11"
+   }, 
+   {
+    "cold": 0.8313899040222168, 
+    "warm": -10, 
+    "command": "rm -rf test11.clone"
+   }, 
+   {
+    "cold": 0.8819448947906494, 
+    "warm": -10, 
+    "command": "tar -xzf test11.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 12, 
+  "times": [
+   {
+    "cold": 3.7508349418640137, 
+    "warm": 0.08603811264038086, 
+    "command": "du -scm test12"
+   }, 
+   {
+    "cold": 11.783746004104614, 
+    "warm": 0.2705380916595459, 
+    "command": "tar -cf test12.tar test12"
+   }, 
+   {
+    "cold": 0.11928391456604004, 
+    "warm": -10, 
+    "command": "pigz test12.tar"
+   }, 
+   {
+    "cold": 2.321967840194702, 
+    "warm": 0.0772101879119873, 
+    "command": "chmod +w -R test12/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5386300086975098, 
+    "warm": -10, 
+    "command": "git clone test12 test12.clone"
+   }, 
+   {
+    "cold": 33.845862865448, 
+    "warm": -10, 
+    "command": "cd test12.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.267521142959595, 
+    "warm": -10, 
+    "command": "cd test12.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5435690879821777, 
+    "warm": 0.044442176818847656, 
+    "command": "du -scm test12.clone"
+   }, 
+   {
+    "cold": 4.195842027664185, 
+    "warm": -10, 
+    "command": "rm -rf test12"
+   }, 
+   {
+    "cold": 1.0056679248809814, 
+    "warm": -10, 
+    "command": "rm -rf test12.clone"
+   }, 
+   {
+    "cold": 0.9343149662017822, 
+    "warm": -10, 
+    "command": "tar -xzf test12.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 13, 
+  "times": [
+   {
+    "cold": 3.9309279918670654, 
+    "warm": 0.07361602783203125, 
+    "command": "du -scm test13"
+   }, 
+   {
+    "cold": 12.28258490562439, 
+    "warm": 0.5821738243103027, 
+    "command": "tar -cf test13.tar test13"
+   }, 
+   {
+    "cold": 0.1372818946838379, 
+    "warm": -10, 
+    "command": "pigz test13.tar"
+   }, 
+   {
+    "cold": 2.292443037033081, 
+    "warm": 0.08637499809265137, 
+    "command": "chmod +w -R test13/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.899991989135742, 
+    "warm": -10, 
+    "command": "git clone test13 test13.clone"
+   }, 
+   {
+    "cold": 32.13559293746948, 
+    "warm": -10, 
+    "command": "cd test13.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.589916944503784, 
+    "warm": -10, 
+    "command": "cd test13.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5849969387054443, 
+    "warm": 0.03864097595214844, 
+    "command": "du -scm test13.clone"
+   }, 
+   {
+    "cold": 3.8229708671569824, 
+    "warm": -10, 
+    "command": "rm -rf test13"
+   }, 
+   {
+    "cold": 0.8344941139221191, 
+    "warm": -10, 
+    "command": "rm -rf test13.clone"
+   }, 
+   {
+    "cold": 0.9398651123046875, 
+    "warm": -10, 
+    "command": "tar -xzf test13.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 14, 
+  "times": [
+   {
+    "cold": 3.595715045928955, 
+    "warm": 0.08855199813842773, 
+    "command": "du -scm test14"
+   }, 
+   {
+    "cold": 12.717216968536377, 
+    "warm": 0.34653782844543457, 
+    "command": "tar -cf test14.tar test14"
+   }, 
+   {
+    "cold": 0.13428401947021484, 
+    "warm": -10, 
+    "command": "pigz test14.tar"
+   }, 
+   {
+    "cold": 2.448362112045288, 
+    "warm": 0.08478093147277832, 
+    "command": "chmod +w -R test14/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.695612907409668, 
+    "warm": -10, 
+    "command": "git clone test14 test14.clone"
+   }, 
+   {
+    "cold": 34.11194610595703, 
+    "warm": -10, 
+    "command": "cd test14.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.618324041366577, 
+    "warm": -10, 
+    "command": "cd test14.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7515010833740234, 
+    "warm": 0.04563283920288086, 
+    "command": "du -scm test14.clone"
+   }, 
+   {
+    "cold": 3.960415840148926, 
+    "warm": -10, 
+    "command": "rm -rf test14"
+   }, 
+   {
+    "cold": 0.9273738861083984, 
+    "warm": -10, 
+    "command": "rm -rf test14.clone"
+   }, 
+   {
+    "cold": 0.8683850765228271, 
+    "warm": -10, 
+    "command": "tar -xzf test14.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 15, 
+  "times": [
+   {
+    "cold": 3.340172052383423, 
+    "warm": 0.08411598205566406, 
+    "command": "du -scm test15"
+   }, 
+   {
+    "cold": 12.563377141952515, 
+    "warm": 0.2709770202636719, 
+    "command": "tar -cf test15.tar test15"
+   }, 
+   {
+    "cold": 0.15691709518432617, 
+    "warm": -10, 
+    "command": "pigz test15.tar"
+   }, 
+   {
+    "cold": 2.538266897201538, 
+    "warm": 0.07839298248291016, 
+    "command": "chmod +w -R test15/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1406068801879883, 
+    "warm": -10, 
+    "command": "git clone test15 test15.clone"
+   }, 
+   {
+    "cold": 34.44694399833679, 
+    "warm": -10, 
+    "command": "cd test15.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.44630718231201, 
+    "warm": -10, 
+    "command": "cd test15.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6099698543548584, 
+    "warm": 0.039494991302490234, 
+    "command": "du -scm test15.clone"
+   }, 
+   {
+    "cold": 3.7869980335235596, 
+    "warm": -10, 
+    "command": "rm -rf test15"
+   }, 
+   {
+    "cold": 0.871506929397583, 
+    "warm": -10, 
+    "command": "rm -rf test15.clone"
+   }, 
+   {
+    "cold": 0.8596189022064209, 
+    "warm": -10, 
+    "command": "tar -xzf test15.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 16, 
+  "times": [
+   {
+    "cold": 3.99566912651062, 
+    "warm": 0.08513593673706055, 
+    "command": "du -scm test16"
+   }, 
+   {
+    "cold": 12.193097114562988, 
+    "warm": 0.258821964263916, 
+    "command": "tar -cf test16.tar test16"
+   }, 
+   {
+    "cold": 0.11667799949645996, 
+    "warm": -10, 
+    "command": "pigz test16.tar"
+   }, 
+   {
+    "cold": 2.4399449825286865, 
+    "warm": 0.0806879997253418, 
+    "command": "chmod +w -R test16/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.7283990383148193, 
+    "warm": -10, 
+    "command": "git clone test16 test16.clone"
+   }, 
+   {
+    "cold": 34.28443884849548, 
+    "warm": -10, 
+    "command": "cd test16.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.47683882713318, 
+    "warm": -10, 
+    "command": "cd test16.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6365940570831299, 
+    "warm": 0.05606198310852051, 
+    "command": "du -scm test16.clone"
+   }, 
+   {
+    "cold": 3.990212917327881, 
+    "warm": -10, 
+    "command": "rm -rf test16"
+   }, 
+   {
+    "cold": 0.9022409915924072, 
+    "warm": -10, 
+    "command": "rm -rf test16.clone"
+   }, 
+   {
+    "cold": 0.7921500205993652, 
+    "warm": -10, 
+    "command": "tar -xzf test16.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 17, 
+  "times": [
+   {
+    "cold": 3.425663948059082, 
+    "warm": 0.0854790210723877, 
+    "command": "du -scm test17"
+   }, 
+   {
+    "cold": 11.821484804153442, 
+    "warm": 0.24382305145263672, 
+    "command": "tar -cf test17.tar test17"
+   }, 
+   {
+    "cold": 0.11473989486694336, 
+    "warm": -10, 
+    "command": "pigz test17.tar"
+   }, 
+   {
+    "cold": 2.458146095275879, 
+    "warm": 0.08257484436035156, 
+    "command": "chmod +w -R test17/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1143789291381836, 
+    "warm": -10, 
+    "command": "git clone test17 test17.clone"
+   }, 
+   {
+    "cold": 37.95960307121277, 
+    "warm": -10, 
+    "command": "cd test17.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.692102909088135, 
+    "warm": -10, 
+    "command": "cd test17.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7501859664916992, 
+    "warm": 0.04619002342224121, 
+    "command": "du -scm test17.clone"
+   }, 
+   {
+    "cold": 3.944023847579956, 
+    "warm": -10, 
+    "command": "rm -rf test17"
+   }, 
+   {
+    "cold": 0.9347212314605713, 
+    "warm": -10, 
+    "command": "rm -rf test17.clone"
+   }, 
+   {
+    "cold": 0.8306980133056641, 
+    "warm": -10, 
+    "command": "tar -xzf test17.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 18, 
+  "times": [
+   {
+    "cold": 3.8326079845428467, 
+    "warm": 0.07294011116027832, 
+    "command": "du -scm test18"
+   }, 
+   {
+    "cold": 12.323056936264038, 
+    "warm": 0.25948190689086914, 
+    "command": "tar -cf test18.tar test18"
+   }, 
+   {
+    "cold": 0.1238408088684082, 
+    "warm": -10, 
+    "command": "pigz test18.tar"
+   }, 
+   {
+    "cold": 2.487569808959961, 
+    "warm": 0.08342909812927246, 
+    "command": "chmod +w -R test18/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6294097900390625, 
+    "warm": -10, 
+    "command": "git clone test18 test18.clone"
+   }, 
+   {
+    "cold": 34.78603196144104, 
+    "warm": -10, 
+    "command": "cd test18.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.867408990859985, 
+    "warm": -10, 
+    "command": "cd test18.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7243750095367432, 
+    "warm": 0.03819394111633301, 
+    "command": "du -scm test18.clone"
+   }, 
+   {
+    "cold": 4.318795204162598, 
+    "warm": -10, 
+    "command": "rm -rf test18"
+   }, 
+   {
+    "cold": 0.9187970161437988, 
+    "warm": -10, 
+    "command": "rm -rf test18.clone"
+   }, 
+   {
+    "cold": 1.039905071258545, 
+    "warm": -10, 
+    "command": "tar -xzf test18.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 19, 
+  "times": [
+   {
+    "cold": 3.588505983352661, 
+    "warm": 0.07470202445983887, 
+    "command": "du -scm test19"
+   }, 
+   {
+    "cold": 12.201957941055298, 
+    "warm": 0.25374603271484375, 
+    "command": "tar -cf test19.tar test19"
+   }, 
+   {
+    "cold": 0.14591193199157715, 
+    "warm": -10, 
+    "command": "pigz test19.tar"
+   }, 
+   {
+    "cold": 2.1791460514068604, 
+    "warm": 0.08020687103271484, 
+    "command": "chmod +w -R test19/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.095163106918335, 
+    "warm": -10, 
+    "command": "git clone test19 test19.clone"
+   }, 
+   {
+    "cold": 32.43982696533203, 
+    "warm": -10, 
+    "command": "cd test19.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.845033884048462, 
+    "warm": -10, 
+    "command": "cd test19.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6580920219421387, 
+    "warm": 0.04860520362854004, 
+    "command": "du -scm test19.clone"
+   }, 
+   {
+    "cold": 4.278241872787476, 
+    "warm": -10, 
+    "command": "rm -rf test19"
+   }, 
+   {
+    "cold": 0.8447971343994141, 
+    "warm": -10, 
+    "command": "rm -rf test19.clone"
+   }, 
+   {
+    "cold": 0.6550290584564209, 
+    "warm": -10, 
+    "command": "tar -xzf test19.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 20, 
+  "times": [
+   {
+    "cold": 3.250260829925537, 
+    "warm": 0.07015514373779297, 
+    "command": "du -scm test20"
+   }, 
+   {
+    "cold": 11.804699897766113, 
+    "warm": 0.2793450355529785, 
+    "command": "tar -cf test20.tar test20"
+   }, 
+   {
+    "cold": 0.10300111770629883, 
+    "warm": -10, 
+    "command": "pigz test20.tar"
+   }, 
+   {
+    "cold": 2.2443270683288574, 
+    "warm": 0.07972908020019531, 
+    "command": "chmod +w -R test20/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.3363499641418457, 
+    "warm": -10, 
+    "command": "git clone test20 test20.clone"
+   }, 
+   {
+    "cold": 39.214925050735474, 
+    "warm": -10, 
+    "command": "cd test20.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.40196204185486, 
+    "warm": -10, 
+    "command": "cd test20.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6063840389251709, 
+    "warm": 0.05548095703125, 
+    "command": "du -scm test20.clone"
+   }, 
+   {
+    "cold": 3.9873099327087402, 
+    "warm": -10, 
+    "command": "rm -rf test20"
+   }, 
+   {
+    "cold": 0.8339571952819824, 
+    "warm": -10, 
+    "command": "rm -rf test20.clone"
+   }, 
+   {
+    "cold": 0.8244850635528564, 
+    "warm": -10, 
+    "command": "tar -xzf test20.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 21, 
+  "times": [
+   {
+    "cold": 3.7328882217407227, 
+    "warm": 0.07236886024475098, 
+    "command": "du -scm test21"
+   }, 
+   {
+    "cold": 12.214663982391357, 
+    "warm": 0.24956393241882324, 
+    "command": "tar -cf test21.tar test21"
+   }, 
+   {
+    "cold": 0.14500713348388672, 
+    "warm": -10, 
+    "command": "pigz test21.tar"
+   }, 
+   {
+    "cold": 2.4931130409240723, 
+    "warm": 0.07646799087524414, 
+    "command": "chmod +w -R test21/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.7084639072418213, 
+    "warm": -10, 
+    "command": "git clone test21 test21.clone"
+   }, 
+   {
+    "cold": 38.126259088516235, 
+    "warm": -10, 
+    "command": "cd test21.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.97843313217163, 
+    "warm": -10, 
+    "command": "cd test21.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7893898487091064, 
+    "warm": 0.05496811866760254, 
+    "command": "du -scm test21.clone"
+   }, 
+   {
+    "cold": 4.039853096008301, 
+    "warm": -10, 
+    "command": "rm -rf test21"
+   }, 
+   {
+    "cold": 1.0629479885101318, 
+    "warm": -10, 
+    "command": "rm -rf test21.clone"
+   }, 
+   {
+    "cold": 0.9153931140899658, 
+    "warm": -10, 
+    "command": "tar -xzf test21.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 22, 
+  "times": [
+   {
+    "cold": 3.6370129585266113, 
+    "warm": 0.08652281761169434, 
+    "command": "du -scm test22"
+   }, 
+   {
+    "cold": 12.298208951950073, 
+    "warm": 0.2563438415527344, 
+    "command": "tar -cf test22.tar test22"
+   }, 
+   {
+    "cold": 0.14734911918640137, 
+    "warm": -10, 
+    "command": "pigz test22.tar"
+   }, 
+   {
+    "cold": 2.346630096435547, 
+    "warm": 0.053462982177734375, 
+    "command": "chmod +w -R test22/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.4649720191955566, 
+    "warm": -10, 
+    "command": "git clone test22 test22.clone"
+   }, 
+   {
+    "cold": 33.84681296348572, 
+    "warm": -10, 
+    "command": "cd test22.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.963013172149658, 
+    "warm": -10, 
+    "command": "cd test22.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.637951135635376, 
+    "warm": 0.036229848861694336, 
+    "command": "du -scm test22.clone"
+   }, 
+   {
+    "cold": 3.782231092453003, 
+    "warm": -10, 
+    "command": "rm -rf test22"
+   }, 
+   {
+    "cold": 0.9087240695953369, 
+    "warm": -10, 
+    "command": "rm -rf test22.clone"
+   }, 
+   {
+    "cold": 0.8534910678863525, 
+    "warm": -10, 
+    "command": "tar -xzf test22.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 23, 
+  "times": [
+   {
+    "cold": 3.73834490776062, 
+    "warm": 0.07762598991394043, 
+    "command": "du -scm test23"
+   }, 
+   {
+    "cold": 12.26170301437378, 
+    "warm": 0.25887513160705566, 
+    "command": "tar -cf test23.tar test23"
+   }, 
+   {
+    "cold": 0.11767792701721191, 
+    "warm": -10, 
+    "command": "pigz test23.tar"
+   }, 
+   {
+    "cold": 2.5923209190368652, 
+    "warm": 0.0791311264038086, 
+    "command": "chmod +w -R test23/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5306811332702637, 
+    "warm": -10, 
+    "command": "git clone test23 test23.clone"
+   }, 
+   {
+    "cold": 34.63314604759216, 
+    "warm": -10, 
+    "command": "cd test23.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.023717880249023, 
+    "warm": -10, 
+    "command": "cd test23.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.594825029373169, 
+    "warm": 0.05377602577209473, 
+    "command": "du -scm test23.clone"
+   }, 
+   {
+    "cold": 4.034379005432129, 
+    "warm": -10, 
+    "command": "rm -rf test23"
+   }, 
+   {
+    "cold": 0.7950260639190674, 
+    "warm": -10, 
+    "command": "rm -rf test23.clone"
+   }, 
+   {
+    "cold": 0.6405339241027832, 
+    "warm": -10, 
+    "command": "tar -xzf test23.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 24, 
+  "times": [
+   {
+    "cold": 3.642219066619873, 
+    "warm": 0.08557415008544922, 
+    "command": "du -scm test24"
+   }, 
+   {
+    "cold": 11.59331202507019, 
+    "warm": 0.3565669059753418, 
+    "command": "tar -cf test24.tar test24"
+   }, 
+   {
+    "cold": 0.11482620239257812, 
+    "warm": -10, 
+    "command": "pigz test24.tar"
+   }, 
+   {
+    "cold": 2.331260919570923, 
+    "warm": 0.07934117317199707, 
+    "command": "chmod +w -R test24/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.671290874481201, 
+    "warm": -10, 
+    "command": "git clone test24 test24.clone"
+   }, 
+   {
+    "cold": 36.570366859436035, 
+    "warm": -10, 
+    "command": "cd test24.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.386847019195557, 
+    "warm": -10, 
+    "command": "cd test24.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7122199535369873, 
+    "warm": 0.04418015480041504, 
+    "command": "du -scm test24.clone"
+   }, 
+   {
+    "cold": 3.8474040031433105, 
+    "warm": -10, 
+    "command": "rm -rf test24"
+   }, 
+   {
+    "cold": 0.9343039989471436, 
+    "warm": -10, 
+    "command": "rm -rf test24.clone"
+   }, 
+   {
+    "cold": 0.6821248531341553, 
+    "warm": -10, 
+    "command": "tar -xzf test24.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 25, 
+  "times": [
+   {
+    "cold": 3.6867990493774414, 
+    "warm": 0.07675004005432129, 
+    "command": "du -scm test25"
+   }, 
+   {
+    "cold": 11.899197101593018, 
+    "warm": 0.4161520004272461, 
+    "command": "tar -cf test25.tar test25"
+   }, 
+   {
+    "cold": 0.1404561996459961, 
+    "warm": -10, 
+    "command": "pigz test25.tar"
+   }, 
+   {
+    "cold": 1.9279098510742188, 
+    "warm": 0.08527398109436035, 
+    "command": "chmod +w -R test25/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.30674409866333, 
+    "warm": -10, 
+    "command": "git clone test25 test25.clone"
+   }, 
+   {
+    "cold": 34.49485492706299, 
+    "warm": -10, 
+    "command": "cd test25.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.227060794830322, 
+    "warm": -10, 
+    "command": "cd test25.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7036378383636475, 
+    "warm": 0.055882930755615234, 
+    "command": "du -scm test25.clone"
+   }, 
+   {
+    "cold": 3.953885078430176, 
+    "warm": -10, 
+    "command": "rm -rf test25"
+   }, 
+   {
+    "cold": 0.9275448322296143, 
+    "warm": -10, 
+    "command": "rm -rf test25.clone"
+   }, 
+   {
+    "cold": 0.7781450748443604, 
+    "warm": -10, 
+    "command": "tar -xzf test25.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 26, 
+  "times": [
+   {
+    "cold": 4.167474985122681, 
+    "warm": 0.0823969841003418, 
+    "command": "du -scm test26"
+   }, 
+   {
+    "cold": 12.532847166061401, 
+    "warm": 0.36695289611816406, 
+    "command": "tar -cf test26.tar test26"
+   }, 
+   {
+    "cold": 0.12970781326293945, 
+    "warm": -10, 
+    "command": "pigz test26.tar"
+   }, 
+   {
+    "cold": 2.2974891662597656, 
+    "warm": 0.07682585716247559, 
+    "command": "chmod +w -R test26/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.531264066696167, 
+    "warm": -10, 
+    "command": "git clone test26 test26.clone"
+   }, 
+   {
+    "cold": 33.598674058914185, 
+    "warm": -10, 
+    "command": "cd test26.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.87571907043457, 
+    "warm": -10, 
+    "command": "cd test26.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.8181581497192383, 
+    "warm": 0.05403399467468262, 
+    "command": "du -scm test26.clone"
+   }, 
+   {
+    "cold": 4.103925943374634, 
+    "warm": -10, 
+    "command": "rm -rf test26"
+   }, 
+   {
+    "cold": 1.0312790870666504, 
+    "warm": -10, 
+    "command": "rm -rf test26.clone"
+   }, 
+   {
+    "cold": 0.6354751586914062, 
+    "warm": -10, 
+    "command": "tar -xzf test26.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 27, 
+  "times": [
+   {
+    "cold": 3.522524833679199, 
+    "warm": 0.08627104759216309, 
+    "command": "du -scm test27"
+   }, 
+   {
+    "cold": 11.867239952087402, 
+    "warm": 0.26178598403930664, 
+    "command": "tar -cf test27.tar test27"
+   }, 
+   {
+    "cold": 0.11453890800476074, 
+    "warm": -10, 
+    "command": "pigz test27.tar"
+   }, 
+   {
+    "cold": 2.450157880783081, 
+    "warm": 0.08997392654418945, 
+    "command": "chmod +w -R test27/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.1607019901275635, 
+    "warm": -10, 
+    "command": "git clone test27 test27.clone"
+   }, 
+   {
+    "cold": 32.776602029800415, 
+    "warm": -10, 
+    "command": "cd test27.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.76957607269287, 
+    "warm": -10, 
+    "command": "cd test27.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5924060344696045, 
+    "warm": 0.03872203826904297, 
+    "command": "du -scm test27.clone"
+   }, 
+   {
+    "cold": 3.8895230293273926, 
+    "warm": -10, 
+    "command": "rm -rf test27"
+   }, 
+   {
+    "cold": 0.9304568767547607, 
+    "warm": -10, 
+    "command": "rm -rf test27.clone"
+   }, 
+   {
+    "cold": 0.6623921394348145, 
+    "warm": -10, 
+    "command": "tar -xzf test27.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 28, 
+  "times": [
+   {
+    "cold": 3.2056479454040527, 
+    "warm": 0.07304191589355469, 
+    "command": "du -scm test28"
+   }, 
+   {
+    "cold": 12.652516841888428, 
+    "warm": 0.24381494522094727, 
+    "command": "tar -cf test28.tar test28"
+   }, 
+   {
+    "cold": 0.17981815338134766, 
+    "warm": -10, 
+    "command": "pigz test28.tar"
+   }, 
+   {
+    "cold": 2.371541976928711, 
+    "warm": 0.08761906623840332, 
+    "command": "chmod +w -R test28/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.54128098487854, 
+    "warm": -10, 
+    "command": "git clone test28 test28.clone"
+   }, 
+   {
+    "cold": 36.53101110458374, 
+    "warm": -10, 
+    "command": "cd test28.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.27385711669922, 
+    "warm": -10, 
+    "command": "cd test28.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7058589458465576, 
+    "warm": 0.04865694046020508, 
+    "command": "du -scm test28.clone"
+   }, 
+   {
+    "cold": 3.708651065826416, 
+    "warm": -10, 
+    "command": "rm -rf test28"
+   }, 
+   {
+    "cold": 0.9177181720733643, 
+    "warm": -10, 
+    "command": "rm -rf test28.clone"
+   }, 
+   {
+    "cold": 0.7985620498657227, 
+    "warm": -10, 
+    "command": "tar -xzf test28.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 29, 
+  "times": [
+   {
+    "cold": 4.194020986557007, 
+    "warm": 0.08439111709594727, 
+    "command": "du -scm test29"
+   }, 
+   {
+    "cold": 12.65350604057312, 
+    "warm": 0.27102208137512207, 
+    "command": "tar -cf test29.tar test29"
+   }, 
+   {
+    "cold": 0.12036490440368652, 
+    "warm": -10, 
+    "command": "pigz test29.tar"
+   }, 
+   {
+    "cold": 2.6512908935546875, 
+    "warm": 0.08981990814208984, 
+    "command": "chmod +w -R test29/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.8712620735168457, 
+    "warm": -10, 
+    "command": "git clone test29 test29.clone"
+   }, 
+   {
+    "cold": 34.09265899658203, 
+    "warm": -10, 
+    "command": "cd test29.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.08471989631653, 
+    "warm": -10, 
+    "command": "cd test29.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5780580043792725, 
+    "warm": 0.04304385185241699, 
+    "command": "du -scm test29.clone"
+   }, 
+   {
+    "cold": 4.643415927886963, 
+    "warm": -10, 
+    "command": "rm -rf test29"
+   }, 
+   {
+    "cold": 0.982001781463623, 
+    "warm": -10, 
+    "command": "rm -rf test29.clone"
+   }, 
+   {
+    "cold": 1.0078051090240479, 
+    "warm": -10, 
+    "command": "tar -xzf test29.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 30, 
+  "times": [
+   {
+    "cold": 3.5112109184265137, 
+    "warm": 0.07496094703674316, 
+    "command": "du -scm test30"
+   }, 
+   {
+    "cold": 12.035284996032715, 
+    "warm": 0.40814900398254395, 
+    "command": "tar -cf test30.tar test30"
+   }, 
+   {
+    "cold": 0.13358592987060547, 
+    "warm": -10, 
+    "command": "pigz test30.tar"
+   }, 
+   {
+    "cold": 2.3815970420837402, 
+    "warm": 0.0772409439086914, 
+    "command": "chmod +w -R test30/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.7321670055389404, 
+    "warm": -10, 
+    "command": "git clone test30 test30.clone"
+   }, 
+   {
+    "cold": 35.05481004714966, 
+    "warm": -10, 
+    "command": "cd test30.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.027461051940918, 
+    "warm": -10, 
+    "command": "cd test30.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7217121124267578, 
+    "warm": 0.04738783836364746, 
+    "command": "du -scm test30.clone"
+   }, 
+   {
+    "cold": 3.851210117340088, 
+    "warm": -10, 
+    "command": "rm -rf test30"
+   }, 
+   {
+    "cold": 0.9652810096740723, 
+    "warm": -10, 
+    "command": "rm -rf test30.clone"
+   }, 
+   {
+    "cold": 0.7364630699157715, 
+    "warm": -10, 
+    "command": "tar -xzf test30.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 31, 
+  "times": [
+   {
+    "cold": 3.9036848545074463, 
+    "warm": 0.07260608673095703, 
+    "command": "du -scm test31"
+   }, 
+   {
+    "cold": 11.461743116378784, 
+    "warm": 0.25844693183898926, 
+    "command": "tar -cf test31.tar test31"
+   }, 
+   {
+    "cold": 0.14709186553955078, 
+    "warm": -10, 
+    "command": "pigz test31.tar"
+   }, 
+   {
+    "cold": 2.1759278774261475, 
+    "warm": 0.07782816886901855, 
+    "command": "chmod +w -R test31/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.3546648025512695, 
+    "warm": -10, 
+    "command": "git clone test31 test31.clone"
+   }, 
+   {
+    "cold": 33.47275686264038, 
+    "warm": -10, 
+    "command": "cd test31.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.746114015579224, 
+    "warm": -10, 
+    "command": "cd test31.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.8153760433197021, 
+    "warm": 0.048985958099365234, 
+    "command": "du -scm test31.clone"
+   }, 
+   {
+    "cold": 4.50258994102478, 
+    "warm": -10, 
+    "command": "rm -rf test31"
+   }, 
+   {
+    "cold": 0.9191341400146484, 
+    "warm": -10, 
+    "command": "rm -rf test31.clone"
+   }, 
+   {
+    "cold": 0.7602789402008057, 
+    "warm": -10, 
+    "command": "tar -xzf test31.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 32, 
+  "times": [
+   {
+    "cold": 3.0677480697631836, 
+    "warm": 0.07226109504699707, 
+    "command": "du -scm test32"
+   }, 
+   {
+    "cold": 12.25709581375122, 
+    "warm": 0.5111258029937744, 
+    "command": "tar -cf test32.tar test32"
+   }, 
+   {
+    "cold": 0.14575505256652832, 
+    "warm": -10, 
+    "command": "pigz test32.tar"
+   }, 
+   {
+    "cold": 2.17568302154541, 
+    "warm": 0.09128904342651367, 
+    "command": "chmod +w -R test32/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.7780580520629883, 
+    "warm": -10, 
+    "command": "git clone test32 test32.clone"
+   }, 
+   {
+    "cold": 33.055405139923096, 
+    "warm": -10, 
+    "command": "cd test32.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.661545038223267, 
+    "warm": -10, 
+    "command": "cd test32.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.729050874710083, 
+    "warm": 0.0468599796295166, 
+    "command": "du -scm test32.clone"
+   }, 
+   {
+    "cold": 3.9371421337127686, 
+    "warm": -10, 
+    "command": "rm -rf test32"
+   }, 
+   {
+    "cold": 1.0873010158538818, 
+    "warm": -10, 
+    "command": "rm -rf test32.clone"
+   }, 
+   {
+    "cold": 0.7657239437103271, 
+    "warm": -10, 
+    "command": "tar -xzf test32.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 33, 
+  "times": [
+   {
+    "cold": 3.4399020671844482, 
+    "warm": 0.08777689933776855, 
+    "command": "du -scm test33"
+   }, 
+   {
+    "cold": 11.933420181274414, 
+    "warm": 0.36626219749450684, 
+    "command": "tar -cf test33.tar test33"
+   }, 
+   {
+    "cold": 0.12788105010986328, 
+    "warm": -10, 
+    "command": "pigz test33.tar"
+   }, 
+   {
+    "cold": 2.235987901687622, 
+    "warm": 0.07948088645935059, 
+    "command": "chmod +w -R test33/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.411463975906372, 
+    "warm": -10, 
+    "command": "git clone test33 test33.clone"
+   }, 
+   {
+    "cold": 33.71129298210144, 
+    "warm": -10, 
+    "command": "cd test33.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.474129915237427, 
+    "warm": -10, 
+    "command": "cd test33.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5921521186828613, 
+    "warm": 0.053784847259521484, 
+    "command": "du -scm test33.clone"
+   }, 
+   {
+    "cold": 3.889378786087036, 
+    "warm": -10, 
+    "command": "rm -rf test33"
+   }, 
+   {
+    "cold": 0.9212892055511475, 
+    "warm": -10, 
+    "command": "rm -rf test33.clone"
+   }, 
+   {
+    "cold": 0.7290987968444824, 
+    "warm": -10, 
+    "command": "tar -xzf test33.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 34, 
+  "times": [
+   {
+    "cold": 3.4474399089813232, 
+    "warm": 0.06817102432250977, 
+    "command": "du -scm test34"
+   }, 
+   {
+    "cold": 12.388320922851562, 
+    "warm": 0.256397008895874, 
+    "command": "tar -cf test34.tar test34"
+   }, 
+   {
+    "cold": 0.18309903144836426, 
+    "warm": -10, 
+    "command": "pigz test34.tar"
+   }, 
+   {
+    "cold": 2.307889938354492, 
+    "warm": 0.07726693153381348, 
+    "command": "chmod +w -R test34/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0143508911132812, 
+    "warm": -10, 
+    "command": "git clone test34 test34.clone"
+   }, 
+   {
+    "cold": 35.66053104400635, 
+    "warm": -10, 
+    "command": "cd test34.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.323302030563354, 
+    "warm": -10, 
+    "command": "cd test34.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7088198661804199, 
+    "warm": 0.04319882392883301, 
+    "command": "du -scm test34.clone"
+   }, 
+   {
+    "cold": 3.9510538578033447, 
+    "warm": -10, 
+    "command": "rm -rf test34"
+   }, 
+   {
+    "cold": 0.8990099430084229, 
+    "warm": -10, 
+    "command": "rm -rf test34.clone"
+   }, 
+   {
+    "cold": 1.0252978801727295, 
+    "warm": -10, 
+    "command": "tar -xzf test34.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 35, 
+  "times": [
+   {
+    "cold": 3.9226348400115967, 
+    "warm": 0.07334613800048828, 
+    "command": "du -scm test35"
+   }, 
+   {
+    "cold": 12.030738830566406, 
+    "warm": 0.2568399906158447, 
+    "command": "tar -cf test35.tar test35"
+   }, 
+   {
+    "cold": 0.1107790470123291, 
+    "warm": -10, 
+    "command": "pigz test35.tar"
+   }, 
+   {
+    "cold": 2.4266958236694336, 
+    "warm": 0.07930397987365723, 
+    "command": "chmod +w -R test35/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.1195709705352783, 
+    "warm": -10, 
+    "command": "git clone test35 test35.clone"
+   }, 
+   {
+    "cold": 37.433440923690796, 
+    "warm": -10, 
+    "command": "cd test35.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.510803937911987, 
+    "warm": -10, 
+    "command": "cd test35.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7096669673919678, 
+    "warm": 0.04751396179199219, 
+    "command": "du -scm test35.clone"
+   }, 
+   {
+    "cold": 3.9644620418548584, 
+    "warm": -10, 
+    "command": "rm -rf test35"
+   }, 
+   {
+    "cold": 0.9188361167907715, 
+    "warm": -10, 
+    "command": "rm -rf test35.clone"
+   }, 
+   {
+    "cold": 0.7022159099578857, 
+    "warm": -10, 
+    "command": "tar -xzf test35.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 36, 
+  "times": [
+   {
+    "cold": 3.6771140098571777, 
+    "warm": 0.07618904113769531, 
+    "command": "du -scm test36"
+   }, 
+   {
+    "cold": 12.329884052276611, 
+    "warm": 0.257918119430542, 
+    "command": "tar -cf test36.tar test36"
+   }, 
+   {
+    "cold": 0.14783096313476562, 
+    "warm": -10, 
+    "command": "pigz test36.tar"
+   }, 
+   {
+    "cold": 2.4351680278778076, 
+    "warm": 0.08012509346008301, 
+    "command": "chmod +w -R test36/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.183919906616211, 
+    "warm": -10, 
+    "command": "git clone test36 test36.clone"
+   }, 
+   {
+    "cold": 32.931435108184814, 
+    "warm": -10, 
+    "command": "cd test36.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.907794952392578, 
+    "warm": -10, 
+    "command": "cd test36.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6597800254821777, 
+    "warm": 0.03874087333679199, 
+    "command": "du -scm test36.clone"
+   }, 
+   {
+    "cold": 4.172065019607544, 
+    "warm": -10, 
+    "command": "rm -rf test36"
+   }, 
+   {
+    "cold": 1.001042127609253, 
+    "warm": -10, 
+    "command": "rm -rf test36.clone"
+   }, 
+   {
+    "cold": 0.8525538444519043, 
+    "warm": -10, 
+    "command": "tar -xzf test36.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 37, 
+  "times": [
+   {
+    "cold": 3.668529987335205, 
+    "warm": 0.08967185020446777, 
+    "command": "du -scm test37"
+   }, 
+   {
+    "cold": 11.949151992797852, 
+    "warm": 0.3858628273010254, 
+    "command": "tar -cf test37.tar test37"
+   }, 
+   {
+    "cold": 0.1309678554534912, 
+    "warm": -10, 
+    "command": "pigz test37.tar"
+   }, 
+   {
+    "cold": 2.1735711097717285, 
+    "warm": 0.09023904800415039, 
+    "command": "chmod +w -R test37/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1058239936828613, 
+    "warm": -10, 
+    "command": "git clone test37 test37.clone"
+   }, 
+   {
+    "cold": 37.65570616722107, 
+    "warm": -10, 
+    "command": "cd test37.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.388569116592407, 
+    "warm": -10, 
+    "command": "cd test37.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7437219619750977, 
+    "warm": 0.05449414253234863, 
+    "command": "du -scm test37.clone"
+   }, 
+   {
+    "cold": 3.878803014755249, 
+    "warm": -10, 
+    "command": "rm -rf test37"
+   }, 
+   {
+    "cold": 0.8685760498046875, 
+    "warm": -10, 
+    "command": "rm -rf test37.clone"
+   }, 
+   {
+    "cold": 0.7530388832092285, 
+    "warm": -10, 
+    "command": "tar -xzf test37.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 38, 
+  "times": [
+   {
+    "cold": 3.724623918533325, 
+    "warm": 0.0851600170135498, 
+    "command": "du -scm test38"
+   }, 
+   {
+    "cold": 12.531519889831543, 
+    "warm": 0.25670814514160156, 
+    "command": "tar -cf test38.tar test38"
+   }, 
+   {
+    "cold": 0.13068699836730957, 
+    "warm": -10, 
+    "command": "pigz test38.tar"
+   }, 
+   {
+    "cold": 2.3109679222106934, 
+    "warm": 0.0835728645324707, 
+    "command": "chmod +w -R test38/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.833235025405884, 
+    "warm": -10, 
+    "command": "git clone test38 test38.clone"
+   }, 
+   {
+    "cold": 37.511301040649414, 
+    "warm": -10, 
+    "command": "cd test38.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.619536876678467, 
+    "warm": -10, 
+    "command": "cd test38.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7498209476470947, 
+    "warm": 0.054422855377197266, 
+    "command": "du -scm test38.clone"
+   }, 
+   {
+    "cold": 3.8733839988708496, 
+    "warm": -10, 
+    "command": "rm -rf test38"
+   }, 
+   {
+    "cold": 0.9729781150817871, 
+    "warm": -10, 
+    "command": "rm -rf test38.clone"
+   }, 
+   {
+    "cold": 0.697800874710083, 
+    "warm": -10, 
+    "command": "tar -xzf test38.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 39, 
+  "times": [
+   {
+    "cold": 3.845906972885132, 
+    "warm": 0.0890958309173584, 
+    "command": "du -scm test39"
+   }, 
+   {
+    "cold": 11.802454948425293, 
+    "warm": 0.3768160343170166, 
+    "command": "tar -cf test39.tar test39"
+   }, 
+   {
+    "cold": 0.14335393905639648, 
+    "warm": -10, 
+    "command": "pigz test39.tar"
+   }, 
+   {
+    "cold": 2.422079086303711, 
+    "warm": 0.07768678665161133, 
+    "command": "chmod +w -R test39/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.1006529331207275, 
+    "warm": -10, 
+    "command": "git clone test39 test39.clone"
+   }, 
+   {
+    "cold": 31.747203826904297, 
+    "warm": -10, 
+    "command": "cd test39.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.16237783432007, 
+    "warm": -10, 
+    "command": "cd test39.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6814658641815186, 
+    "warm": 0.03687596321105957, 
+    "command": "du -scm test39.clone"
+   }, 
+   {
+    "cold": 4.057638168334961, 
+    "warm": -10, 
+    "command": "rm -rf test39"
+   }, 
+   {
+    "cold": 1.0286831855773926, 
+    "warm": -10, 
+    "command": "rm -rf test39.clone"
+   }, 
+   {
+    "cold": 0.7847800254821777, 
+    "warm": -10, 
+    "command": "tar -xzf test39.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 40, 
+  "times": [
+   {
+    "cold": 3.485487937927246, 
+    "warm": 0.06886696815490723, 
+    "command": "du -scm test40"
+   }, 
+   {
+    "cold": 12.320022106170654, 
+    "warm": 0.40392494201660156, 
+    "command": "tar -cf test40.tar test40"
+   }, 
+   {
+    "cold": 0.1301259994506836, 
+    "warm": -10, 
+    "command": "pigz test40.tar"
+   }, 
+   {
+    "cold": 2.1465699672698975, 
+    "warm": 0.07899594306945801, 
+    "command": "chmod +w -R test40/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.9185898303985596, 
+    "warm": -10, 
+    "command": "git clone test40 test40.clone"
+   }, 
+   {
+    "cold": 37.82169198989868, 
+    "warm": -10, 
+    "command": "cd test40.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.263655185699463, 
+    "warm": -10, 
+    "command": "cd test40.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7411727905273438, 
+    "warm": 0.043411970138549805, 
+    "command": "du -scm test40.clone"
+   }, 
+   {
+    "cold": 4.475717067718506, 
+    "warm": -10, 
+    "command": "rm -rf test40"
+   }, 
+   {
+    "cold": 0.9451689720153809, 
+    "warm": -10, 
+    "command": "rm -rf test40.clone"
+   }, 
+   {
+    "cold": 1.002676010131836, 
+    "warm": -10, 
+    "command": "tar -xzf test40.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 41, 
+  "times": [
+   {
+    "cold": 3.276092052459717, 
+    "warm": 0.07374405860900879, 
+    "command": "du -scm test41"
+   }, 
+   {
+    "cold": 12.106920003890991, 
+    "warm": 0.25350284576416016, 
+    "command": "tar -cf test41.tar test41"
+   }, 
+   {
+    "cold": 0.1739799976348877, 
+    "warm": -10, 
+    "command": "pigz test41.tar"
+   }, 
+   {
+    "cold": 1.9591419696807861, 
+    "warm": 0.08736705780029297, 
+    "command": "chmod +w -R test41/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.779559850692749, 
+    "warm": -10, 
+    "command": "git clone test41 test41.clone"
+   }, 
+   {
+    "cold": 35.00832390785217, 
+    "warm": -10, 
+    "command": "cd test41.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.022789001464844, 
+    "warm": -10, 
+    "command": "cd test41.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6022458076477051, 
+    "warm": 0.03631901741027832, 
+    "command": "du -scm test41.clone"
+   }, 
+   {
+    "cold": 3.739285945892334, 
+    "warm": -10, 
+    "command": "rm -rf test41"
+   }, 
+   {
+    "cold": 0.8353190422058105, 
+    "warm": -10, 
+    "command": "rm -rf test41.clone"
+   }, 
+   {
+    "cold": 0.8421151638031006, 
+    "warm": -10, 
+    "command": "tar -xzf test41.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 42, 
+  "times": [
+   {
+    "cold": 3.8513729572296143, 
+    "warm": 0.07752108573913574, 
+    "command": "du -scm test42"
+   }, 
+   {
+    "cold": 13.215034008026123, 
+    "warm": 0.26295995712280273, 
+    "command": "tar -cf test42.tar test42"
+   }, 
+   {
+    "cold": 0.15577387809753418, 
+    "warm": -10, 
+    "command": "pigz test42.tar"
+   }, 
+   {
+    "cold": 2.9669439792633057, 
+    "warm": 0.08431220054626465, 
+    "command": "chmod +w -R test42/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.624039888381958, 
+    "warm": -10, 
+    "command": "git clone test42 test42.clone"
+   }, 
+   {
+    "cold": 37.87660884857178, 
+    "warm": -10, 
+    "command": "cd test42.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.172006130218506, 
+    "warm": -10, 
+    "command": "cd test42.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7160940170288086, 
+    "warm": 0.05286288261413574, 
+    "command": "du -scm test42.clone"
+   }, 
+   {
+    "cold": 4.464792013168335, 
+    "warm": -10, 
+    "command": "rm -rf test42"
+   }, 
+   {
+    "cold": 1.0400559902191162, 
+    "warm": -10, 
+    "command": "rm -rf test42.clone"
+   }, 
+   {
+    "cold": 1.141218900680542, 
+    "warm": -10, 
+    "command": "tar -xzf test42.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 43, 
+  "times": [
+   {
+    "cold": 3.4771499633789062, 
+    "warm": 0.08843207359313965, 
+    "command": "du -scm test43"
+   }, 
+   {
+    "cold": 12.923041820526123, 
+    "warm": 0.26917481422424316, 
+    "command": "tar -cf test43.tar test43"
+   }, 
+   {
+    "cold": 0.10624885559082031, 
+    "warm": -10, 
+    "command": "pigz test43.tar"
+   }, 
+   {
+    "cold": 2.4847450256347656, 
+    "warm": 0.08779001235961914, 
+    "command": "chmod +w -R test43/.git/annex/objects"
+   }, 
+   {
+    "cold": 1.7888519763946533, 
+    "warm": -10, 
+    "command": "git clone test43 test43.clone"
+   }, 
+   {
+    "cold": 34.46745705604553, 
+    "warm": -10, 
+    "command": "cd test43.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.3506920337677, 
+    "warm": -10, 
+    "command": "cd test43.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5366618633270264, 
+    "warm": 0.04617500305175781, 
+    "command": "du -scm test43.clone"
+   }, 
+   {
+    "cold": 3.836280107498169, 
+    "warm": -10, 
+    "command": "rm -rf test43"
+   }, 
+   {
+    "cold": 0.8180010318756104, 
+    "warm": -10, 
+    "command": "rm -rf test43.clone"
+   }, 
+   {
+    "cold": 0.6605260372161865, 
+    "warm": -10, 
+    "command": "tar -xzf test43.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 44, 
+  "times": [
+   {
+    "cold": 3.2211999893188477, 
+    "warm": 0.07308697700500488, 
+    "command": "du -scm test44"
+   }, 
+   {
+    "cold": 11.627286911010742, 
+    "warm": 0.3890659809112549, 
+    "command": "tar -cf test44.tar test44"
+   }, 
+   {
+    "cold": 0.10650300979614258, 
+    "warm": -10, 
+    "command": "pigz test44.tar"
+   }, 
+   {
+    "cold": 2.3706159591674805, 
+    "warm": 0.08983802795410156, 
+    "command": "chmod +w -R test44/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.8633999824523926, 
+    "warm": -10, 
+    "command": "git clone test44 test44.clone"
+   }, 
+   {
+    "cold": 33.257713079452515, 
+    "warm": -10, 
+    "command": "cd test44.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.521265029907227, 
+    "warm": -10, 
+    "command": "cd test44.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6313190460205078, 
+    "warm": 0.049710988998413086, 
+    "command": "du -scm test44.clone"
+   }, 
+   {
+    "cold": 4.004455804824829, 
+    "warm": -10, 
+    "command": "rm -rf test44"
+   }, 
+   {
+    "cold": 0.8212788105010986, 
+    "warm": -10, 
+    "command": "rm -rf test44.clone"
+   }, 
+   {
+    "cold": 0.6883258819580078, 
+    "warm": -10, 
+    "command": "tar -xzf test44.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 45, 
+  "times": [
+   {
+    "cold": 3.453701972961426, 
+    "warm": 0.07331109046936035, 
+    "command": "du -scm test45"
+   }, 
+   {
+    "cold": 12.163562059402466, 
+    "warm": 0.2620508670806885, 
+    "command": "tar -cf test45.tar test45"
+   }, 
+   {
+    "cold": 0.13549399375915527, 
+    "warm": -10, 
+    "command": "pigz test45.tar"
+   }, 
+   {
+    "cold": 2.2223310470581055, 
+    "warm": 0.07767701148986816, 
+    "command": "chmod +w -R test45/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.4359219074249268, 
+    "warm": -10, 
+    "command": "git clone test45 test45.clone"
+   }, 
+   {
+    "cold": 34.77246904373169, 
+    "warm": -10, 
+    "command": "cd test45.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.930227994918823, 
+    "warm": -10, 
+    "command": "cd test45.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6455788612365723, 
+    "warm": 0.04187607765197754, 
+    "command": "du -scm test45.clone"
+   }, 
+   {
+    "cold": 3.6995110511779785, 
+    "warm": -10, 
+    "command": "rm -rf test45"
+   }, 
+   {
+    "cold": 0.8596558570861816, 
+    "warm": -10, 
+    "command": "rm -rf test45.clone"
+   }, 
+   {
+    "cold": 0.68082594871521, 
+    "warm": -10, 
+    "command": "tar -xzf test45.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 46, 
+  "times": [
+   {
+    "cold": 3.7465131282806396, 
+    "warm": 0.07339096069335938, 
+    "command": "du -scm test46"
+   }, 
+   {
+    "cold": 12.367199897766113, 
+    "warm": 0.25327420234680176, 
+    "command": "tar -cf test46.tar test46"
+   }, 
+   {
+    "cold": 0.14467978477478027, 
+    "warm": -10, 
+    "command": "pigz test46.tar"
+   }, 
+   {
+    "cold": 2.5126609802246094, 
+    "warm": 0.07510519027709961, 
+    "command": "chmod +w -R test46/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0485620498657227, 
+    "warm": -10, 
+    "command": "git clone test46 test46.clone"
+   }, 
+   {
+    "cold": 34.31126093864441, 
+    "warm": -10, 
+    "command": "cd test46.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.45288610458374, 
+    "warm": -10, 
+    "command": "cd test46.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.63680100440979, 
+    "warm": 0.047328948974609375, 
+    "command": "du -scm test46.clone"
+   }, 
+   {
+    "cold": 3.588230848312378, 
+    "warm": -10, 
+    "command": "rm -rf test46"
+   }, 
+   {
+    "cold": 1.0074689388275146, 
+    "warm": -10, 
+    "command": "rm -rf test46.clone"
+   }, 
+   {
+    "cold": 1.1186778545379639, 
+    "warm": -10, 
+    "command": "tar -xzf test46.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 47, 
+  "times": [
+   {
+    "cold": 3.3549909591674805, 
+    "warm": 0.07591795921325684, 
+    "command": "du -scm test47"
+   }, 
+   {
+    "cold": 11.973997831344604, 
+    "warm": 0.26061010360717773, 
+    "command": "tar -cf test47.tar test47"
+   }, 
+   {
+    "cold": 0.1112358570098877, 
+    "warm": -10, 
+    "command": "pigz test47.tar"
+   }, 
+   {
+    "cold": 2.4397261142730713, 
+    "warm": 0.07379484176635742, 
+    "command": "chmod +w -R test47/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.8343629837036133, 
+    "warm": -10, 
+    "command": "git clone test47 test47.clone"
+   }, 
+   {
+    "cold": 34.252763986587524, 
+    "warm": -10, 
+    "command": "cd test47.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.69412088394165, 
+    "warm": -10, 
+    "command": "cd test47.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6650409698486328, 
+    "warm": 0.05486893653869629, 
+    "command": "du -scm test47.clone"
+   }, 
+   {
+    "cold": 3.8608341217041016, 
+    "warm": -10, 
+    "command": "rm -rf test47"
+   }, 
+   {
+    "cold": 0.8749539852142334, 
+    "warm": -10, 
+    "command": "rm -rf test47.clone"
+   }, 
+   {
+    "cold": 0.9413900375366211, 
+    "warm": -10, 
+    "command": "tar -xzf test47.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 48, 
+  "times": [
+   {
+    "cold": 3.494729995727539, 
+    "warm": 0.0741109848022461, 
+    "command": "du -scm test48"
+   }, 
+   {
+    "cold": 12.089155197143555, 
+    "warm": 0.25871896743774414, 
+    "command": "tar -cf test48.tar test48"
+   }, 
+   {
+    "cold": 0.1799318790435791, 
+    "warm": -10, 
+    "command": "pigz test48.tar"
+   }, 
+   {
+    "cold": 1.8612701892852783, 
+    "warm": 0.07354903221130371, 
+    "command": "chmod +w -R test48/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5498080253601074, 
+    "warm": -10, 
+    "command": "git clone test48 test48.clone"
+   }, 
+   {
+    "cold": 34.417332887649536, 
+    "warm": -10, 
+    "command": "cd test48.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.304073095321655, 
+    "warm": -10, 
+    "command": "cd test48.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6190190315246582, 
+    "warm": 0.054177045822143555, 
+    "command": "du -scm test48.clone"
+   }, 
+   {
+    "cold": 3.9852190017700195, 
+    "warm": -10, 
+    "command": "rm -rf test48"
+   }, 
+   {
+    "cold": 0.7791478633880615, 
+    "warm": -10, 
+    "command": "rm -rf test48.clone"
+   }, 
+   {
+    "cold": 0.7702608108520508, 
+    "warm": -10, 
+    "command": "tar -xzf test48.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 49, 
+  "times": [
+   {
+    "cold": 3.892240047454834, 
+    "warm": 0.08737397193908691, 
+    "command": "du -scm test49"
+   }, 
+   {
+    "cold": 12.587532043457031, 
+    "warm": 0.25656580924987793, 
+    "command": "tar -cf test49.tar test49"
+   }, 
+   {
+    "cold": 0.14432311058044434, 
+    "warm": -10, 
+    "command": "pigz test49.tar"
+   }, 
+   {
+    "cold": 2.328460931777954, 
+    "warm": 0.07773995399475098, 
+    "command": "chmod +w -R test49/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.0537400245666504, 
+    "warm": -10, 
+    "command": "git clone test49 test49.clone"
+   }, 
+   {
+    "cold": 34.570525884628296, 
+    "warm": -10, 
+    "command": "cd test49.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.456844806671143, 
+    "warm": -10, 
+    "command": "cd test49.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6665802001953125, 
+    "warm": 0.04341411590576172, 
+    "command": "du -scm test49.clone"
+   }, 
+   {
+    "cold": 3.7369730472564697, 
+    "warm": -10, 
+    "command": "rm -rf test49"
+   }, 
+   {
+    "cold": 1.0162150859832764, 
+    "warm": -10, 
+    "command": "rm -rf test49.clone"
+   }, 
+   {
+    "cold": 0.949221134185791, 
+    "warm": -10, 
+    "command": "tar -xzf test49.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 50, 
+  "times": [
+   {
+    "cold": 3.408764123916626, 
+    "warm": 0.07513904571533203, 
+    "command": "du -scm test50"
+   }, 
+   {
+    "cold": 12.123500108718872, 
+    "warm": 0.30335187911987305, 
+    "command": "tar -cf test50.tar test50"
+   }, 
+   {
+    "cold": 0.12300920486450195, 
+    "warm": -10, 
+    "command": "pigz test50.tar"
+   }, 
+   {
+    "cold": 2.239811897277832, 
+    "warm": 0.0794990062713623, 
+    "command": "chmod +w -R test50/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.232451915740967, 
+    "warm": -10, 
+    "command": "git clone test50 test50.clone"
+   }, 
+   {
+    "cold": 35.57443690299988, 
+    "warm": -10, 
+    "command": "cd test50.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.77147912979126, 
+    "warm": -10, 
+    "command": "cd test50.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5576760768890381, 
+    "warm": 0.043966054916381836, 
+    "command": "du -scm test50.clone"
+   }, 
+   {
+    "cold": 4.176429986953735, 
+    "warm": -10, 
+    "command": "rm -rf test50"
+   }, 
+   {
+    "cold": 0.8627169132232666, 
+    "warm": -10, 
+    "command": "rm -rf test50.clone"
+   }, 
+   {
+    "cold": 0.5878009796142578, 
+    "warm": -10, 
+    "command": "tar -xzf test50.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 51, 
+  "times": [
+   {
+    "cold": 4.262547969818115, 
+    "warm": 0.07294511795043945, 
+    "command": "du -scm test51"
+   }, 
+   {
+    "cold": 13.375590085983276, 
+    "warm": 0.2655069828033447, 
+    "command": "tar -cf test51.tar test51"
+   }, 
+   {
+    "cold": 0.13444805145263672, 
+    "warm": -10, 
+    "command": "pigz test51.tar"
+   }, 
+   {
+    "cold": 2.97220778465271, 
+    "warm": 0.07666492462158203, 
+    "command": "chmod +w -R test51/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0461649894714355, 
+    "warm": -10, 
+    "command": "git clone test51 test51.clone"
+   }, 
+   {
+    "cold": 35.80187201499939, 
+    "warm": -10, 
+    "command": "cd test51.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.146800994873047, 
+    "warm": -10, 
+    "command": "cd test51.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7933349609375, 
+    "warm": 0.05397987365722656, 
+    "command": "du -scm test51.clone"
+   }, 
+   {
+    "cold": 4.660888910293579, 
+    "warm": -10, 
+    "command": "rm -rf test51"
+   }, 
+   {
+    "cold": 0.9727098941802979, 
+    "warm": -10, 
+    "command": "rm -rf test51.clone"
+   }, 
+   {
+    "cold": 1.2409429550170898, 
+    "warm": -10, 
+    "command": "tar -xzf test51.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 52, 
+  "times": [
+   {
+    "cold": 3.5775630474090576, 
+    "warm": 0.07499384880065918, 
+    "command": "du -scm test52"
+   }, 
+   {
+    "cold": 11.667181015014648, 
+    "warm": 0.25929999351501465, 
+    "command": "tar -cf test52.tar test52"
+   }, 
+   {
+    "cold": 0.12210202217102051, 
+    "warm": -10, 
+    "command": "pigz test52.tar"
+   }, 
+   {
+    "cold": 2.0777430534362793, 
+    "warm": 0.07211899757385254, 
+    "command": "chmod +w -R test52/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.292649984359741, 
+    "warm": -10, 
+    "command": "git clone test52 test52.clone"
+   }, 
+   {
+    "cold": 34.49764394760132, 
+    "warm": -10, 
+    "command": "cd test52.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.567881107330322, 
+    "warm": -10, 
+    "command": "cd test52.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6059780120849609, 
+    "warm": 0.04426980018615723, 
+    "command": "du -scm test52.clone"
+   }, 
+   {
+    "cold": 4.33942985534668, 
+    "warm": -10, 
+    "command": "rm -rf test52"
+   }, 
+   {
+    "cold": 0.8444027900695801, 
+    "warm": -10, 
+    "command": "rm -rf test52.clone"
+   }, 
+   {
+    "cold": 0.9614081382751465, 
+    "warm": -10, 
+    "command": "tar -xzf test52.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 53, 
+  "times": [
+   {
+    "cold": 3.586638927459717, 
+    "warm": 0.08241510391235352, 
+    "command": "du -scm test53"
+   }, 
+   {
+    "cold": 11.363612174987793, 
+    "warm": 0.31989407539367676, 
+    "command": "tar -cf test53.tar test53"
+   }, 
+   {
+    "cold": 0.25128817558288574, 
+    "warm": -10, 
+    "command": "pigz test53.tar"
+   }, 
+   {
+    "cold": 2.2402241230010986, 
+    "warm": 0.08937597274780273, 
+    "command": "chmod +w -R test53/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5680770874023438, 
+    "warm": -10, 
+    "command": "git clone test53 test53.clone"
+   }, 
+   {
+    "cold": 32.76140785217285, 
+    "warm": -10, 
+    "command": "cd test53.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.137413024902344, 
+    "warm": -10, 
+    "command": "cd test53.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7417941093444824, 
+    "warm": 0.05473589897155762, 
+    "command": "du -scm test53.clone"
+   }, 
+   {
+    "cold": 3.454145908355713, 
+    "warm": -10, 
+    "command": "rm -rf test53"
+   }, 
+   {
+    "cold": 0.8798730373382568, 
+    "warm": -10, 
+    "command": "rm -rf test53.clone"
+   }, 
+   {
+    "cold": 1.366520881652832, 
+    "warm": -10, 
+    "command": "tar -xzf test53.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 54, 
+  "times": [
+   {
+    "cold": 4.236760139465332, 
+    "warm": 0.07334017753601074, 
+    "command": "du -scm test54"
+   }, 
+   {
+    "cold": 12.74292802810669, 
+    "warm": 0.3681159019470215, 
+    "command": "tar -cf test54.tar test54"
+   }, 
+   {
+    "cold": 0.10379195213317871, 
+    "warm": -10, 
+    "command": "pigz test54.tar"
+   }, 
+   {
+    "cold": 2.815678834915161, 
+    "warm": 0.07843804359436035, 
+    "command": "chmod +w -R test54/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.1607959270477295, 
+    "warm": -10, 
+    "command": "git clone test54 test54.clone"
+   }, 
+   {
+    "cold": 39.03243803977966, 
+    "warm": -10, 
+    "command": "cd test54.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.218939065933228, 
+    "warm": -10, 
+    "command": "cd test54.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7027277946472168, 
+    "warm": 0.05318784713745117, 
+    "command": "du -scm test54.clone"
+   }, 
+   {
+    "cold": 5.596781969070435, 
+    "warm": -10, 
+    "command": "rm -rf test54"
+   }, 
+   {
+    "cold": 1.0858819484710693, 
+    "warm": -10, 
+    "command": "rm -rf test54.clone"
+   }, 
+   {
+    "cold": 1.2475998401641846, 
+    "warm": -10, 
+    "command": "tar -xzf test54.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 55, 
+  "times": [
+   {
+    "cold": 3.3267130851745605, 
+    "warm": 0.07565999031066895, 
+    "command": "du -scm test55"
+   }, 
+   {
+    "cold": 11.989067077636719, 
+    "warm": 0.273421049118042, 
+    "command": "tar -cf test55.tar test55"
+   }, 
+   {
+    "cold": 0.15099310874938965, 
+    "warm": -10, 
+    "command": "pigz test55.tar"
+   }, 
+   {
+    "cold": 2.153048038482666, 
+    "warm": 0.07706093788146973, 
+    "command": "chmod +w -R test55/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.809000015258789, 
+    "warm": -10, 
+    "command": "git clone test55 test55.clone"
+   }, 
+   {
+    "cold": 33.32508301734924, 
+    "warm": -10, 
+    "command": "cd test55.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.638496160507202, 
+    "warm": -10, 
+    "command": "cd test55.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.687920093536377, 
+    "warm": 0.04453110694885254, 
+    "command": "du -scm test55.clone"
+   }, 
+   {
+    "cold": 4.080498933792114, 
+    "warm": -10, 
+    "command": "rm -rf test55"
+   }, 
+   {
+    "cold": 0.9517278671264648, 
+    "warm": -10, 
+    "command": "rm -rf test55.clone"
+   }, 
+   {
+    "cold": 0.7463300228118896, 
+    "warm": -10, 
+    "command": "tar -xzf test55.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 56, 
+  "times": [
+   {
+    "cold": 3.514988899230957, 
+    "warm": 0.08590197563171387, 
+    "command": "du -scm test56"
+   }, 
+   {
+    "cold": 12.162796974182129, 
+    "warm": 0.3571510314941406, 
+    "command": "tar -cf test56.tar test56"
+   }, 
+   {
+    "cold": 0.14829707145690918, 
+    "warm": -10, 
+    "command": "pigz test56.tar"
+   }, 
+   {
+    "cold": 1.9328269958496094, 
+    "warm": 0.08862996101379395, 
+    "command": "chmod +w -R test56/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.602396011352539, 
+    "warm": -10, 
+    "command": "git clone test56 test56.clone"
+   }, 
+   {
+    "cold": 33.805919885635376, 
+    "warm": -10, 
+    "command": "cd test56.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.179024934768677, 
+    "warm": -10, 
+    "command": "cd test56.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6249120235443115, 
+    "warm": 0.053563833236694336, 
+    "command": "du -scm test56.clone"
+   }, 
+   {
+    "cold": 3.829874038696289, 
+    "warm": -10, 
+    "command": "rm -rf test56"
+   }, 
+   {
+    "cold": 0.978463888168335, 
+    "warm": -10, 
+    "command": "rm -rf test56.clone"
+   }, 
+   {
+    "cold": 0.9900710582733154, 
+    "warm": -10, 
+    "command": "tar -xzf test56.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 57, 
+  "times": [
+   {
+    "cold": 3.2931699752807617, 
+    "warm": 0.07356810569763184, 
+    "command": "du -scm test57"
+   }, 
+   {
+    "cold": 12.492641925811768, 
+    "warm": 0.26697802543640137, 
+    "command": "tar -cf test57.tar test57"
+   }, 
+   {
+    "cold": 0.1355879306793213, 
+    "warm": -10, 
+    "command": "pigz test57.tar"
+   }, 
+   {
+    "cold": 2.2591090202331543, 
+    "warm": 0.07755780220031738, 
+    "command": "chmod +w -R test57/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1491129398345947, 
+    "warm": -10, 
+    "command": "git clone test57 test57.clone"
+   }, 
+   {
+    "cold": 36.37290000915527, 
+    "warm": -10, 
+    "command": "cd test57.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.338698148727417, 
+    "warm": -10, 
+    "command": "cd test57.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6838071346282959, 
+    "warm": 0.04659676551818848, 
+    "command": "du -scm test57.clone"
+   }, 
+   {
+    "cold": 3.8106868267059326, 
+    "warm": -10, 
+    "command": "rm -rf test57"
+   }, 
+   {
+    "cold": 0.8675591945648193, 
+    "warm": -10, 
+    "command": "rm -rf test57.clone"
+   }, 
+   {
+    "cold": 0.8036739826202393, 
+    "warm": -10, 
+    "command": "tar -xzf test57.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 58, 
+  "times": [
+   {
+    "cold": 3.70302414894104, 
+    "warm": 0.0892949104309082, 
+    "command": "du -scm test58"
+   }, 
+   {
+    "cold": 11.906579971313477, 
+    "warm": 0.39336395263671875, 
+    "command": "tar -cf test58.tar test58"
+   }, 
+   {
+    "cold": 0.11564898490905762, 
+    "warm": -10, 
+    "command": "pigz test58.tar"
+   }, 
+   {
+    "cold": 1.8132810592651367, 
+    "warm": 0.07457184791564941, 
+    "command": "chmod +w -R test58/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5822877883911133, 
+    "warm": -10, 
+    "command": "git clone test58 test58.clone"
+   }, 
+   {
+    "cold": 32.94245386123657, 
+    "warm": -10, 
+    "command": "cd test58.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.650733947753906, 
+    "warm": -10, 
+    "command": "cd test58.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6854550838470459, 
+    "warm": 0.039227962493896484, 
+    "command": "du -scm test58.clone"
+   }, 
+   {
+    "cold": 3.836185932159424, 
+    "warm": -10, 
+    "command": "rm -rf test58"
+   }, 
+   {
+    "cold": 0.9308831691741943, 
+    "warm": -10, 
+    "command": "rm -rf test58.clone"
+   }, 
+   {
+    "cold": 0.7652020454406738, 
+    "warm": -10, 
+    "command": "tar -xzf test58.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 59, 
+  "times": [
+   {
+    "cold": 3.4622371196746826, 
+    "warm": 0.06670403480529785, 
+    "command": "du -scm test59"
+   }, 
+   {
+    "cold": 11.92452597618103, 
+    "warm": 0.27559399604797363, 
+    "command": "tar -cf test59.tar test59"
+   }, 
+   {
+    "cold": 0.13826203346252441, 
+    "warm": -10, 
+    "command": "pigz test59.tar"
+   }, 
+   {
+    "cold": 2.0926401615142822, 
+    "warm": 0.0777440071105957, 
+    "command": "chmod +w -R test59/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5026938915252686, 
+    "warm": -10, 
+    "command": "git clone test59 test59.clone"
+   }, 
+   {
+    "cold": 32.79463815689087, 
+    "warm": -10, 
+    "command": "cd test59.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.345396041870117, 
+    "warm": -10, 
+    "command": "cd test59.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5753779411315918, 
+    "warm": 0.05541491508483887, 
+    "command": "du -scm test59.clone"
+   }, 
+   {
+    "cold": 4.226013898849487, 
+    "warm": -10, 
+    "command": "rm -rf test59"
+   }, 
+   {
+    "cold": 0.9533989429473877, 
+    "warm": -10, 
+    "command": "rm -rf test59.clone"
+   }, 
+   {
+    "cold": 0.7524449825286865, 
+    "warm": -10, 
+    "command": "tar -xzf test59.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 60, 
+  "times": [
+   {
+    "cold": 3.9228789806365967, 
+    "warm": 0.07689785957336426, 
+    "command": "du -scm test60"
+   }, 
+   {
+    "cold": 12.215424060821533, 
+    "warm": 0.24847984313964844, 
+    "command": "tar -cf test60.tar test60"
+   }, 
+   {
+    "cold": 0.11597394943237305, 
+    "warm": -10, 
+    "command": "pigz test60.tar"
+   }, 
+   {
+    "cold": 2.2823500633239746, 
+    "warm": 0.0767660140991211, 
+    "command": "chmod +w -R test60/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6369800567626953, 
+    "warm": -10, 
+    "command": "git clone test60 test60.clone"
+   }, 
+   {
+    "cold": 33.41835689544678, 
+    "warm": -10, 
+    "command": "cd test60.clone; git annex get . "
+   }, 
+   {
+    "cold": 24.060713052749634, 
+    "warm": -10, 
+    "command": "cd test60.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6746737957000732, 
+    "warm": 0.041520118713378906, 
+    "command": "du -scm test60.clone"
+   }, 
+   {
+    "cold": 4.305022954940796, 
+    "warm": -10, 
+    "command": "rm -rf test60"
+   }, 
+   {
+    "cold": 0.844163179397583, 
+    "warm": -10, 
+    "command": "rm -rf test60.clone"
+   }, 
+   {
+    "cold": 0.8278059959411621, 
+    "warm": -10, 
+    "command": "tar -xzf test60.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 61, 
+  "times": [
+   {
+    "cold": 3.846383810043335, 
+    "warm": 0.06955289840698242, 
+    "command": "du -scm test61"
+   }, 
+   {
+    "cold": 12.567936897277832, 
+    "warm": 0.26952290534973145, 
+    "command": "tar -cf test61.tar test61"
+   }, 
+   {
+    "cold": 0.14496397972106934, 
+    "warm": -10, 
+    "command": "pigz test61.tar"
+   }, 
+   {
+    "cold": 2.030574083328247, 
+    "warm": 0.08278894424438477, 
+    "command": "chmod +w -R test61/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5328500270843506, 
+    "warm": -10, 
+    "command": "git clone test61 test61.clone"
+   }, 
+   {
+    "cold": 37.76785707473755, 
+    "warm": -10, 
+    "command": "cd test61.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.857775926589966, 
+    "warm": -10, 
+    "command": "cd test61.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7688119411468506, 
+    "warm": 0.05402803421020508, 
+    "command": "du -scm test61.clone"
+   }, 
+   {
+    "cold": 3.9040420055389404, 
+    "warm": -10, 
+    "command": "rm -rf test61"
+   }, 
+   {
+    "cold": 1.103766918182373, 
+    "warm": -10, 
+    "command": "rm -rf test61.clone"
+   }, 
+   {
+    "cold": 0.6947169303894043, 
+    "warm": -10, 
+    "command": "tar -xzf test61.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 62, 
+  "times": [
+   {
+    "cold": 3.4954910278320312, 
+    "warm": 0.08429193496704102, 
+    "command": "du -scm test62"
+   }, 
+   {
+    "cold": 11.896156072616577, 
+    "warm": 0.40995287895202637, 
+    "command": "tar -cf test62.tar test62"
+   }, 
+   {
+    "cold": 0.19307589530944824, 
+    "warm": -10, 
+    "command": "pigz test62.tar"
+   }, 
+   {
+    "cold": 2.0647149085998535, 
+    "warm": 0.08634591102600098, 
+    "command": "chmod +w -R test62/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.579694986343384, 
+    "warm": -10, 
+    "command": "git clone test62 test62.clone"
+   }, 
+   {
+    "cold": 39.506640911102295, 
+    "warm": -10, 
+    "command": "cd test62.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.011085987091064, 
+    "warm": -10, 
+    "command": "cd test62.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7615299224853516, 
+    "warm": 0.043647050857543945, 
+    "command": "du -scm test62.clone"
+   }, 
+   {
+    "cold": 4.0926899909973145, 
+    "warm": -10, 
+    "command": "rm -rf test62"
+   }, 
+   {
+    "cold": 0.9419219493865967, 
+    "warm": -10, 
+    "command": "rm -rf test62.clone"
+   }, 
+   {
+    "cold": 1.0011940002441406, 
+    "warm": -10, 
+    "command": "tar -xzf test62.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 63, 
+  "times": [
+   {
+    "cold": 3.75681209564209, 
+    "warm": 0.07872200012207031, 
+    "command": "du -scm test63"
+   }, 
+   {
+    "cold": 12.188372135162354, 
+    "warm": 0.26782989501953125, 
+    "command": "tar -cf test63.tar test63"
+   }, 
+   {
+    "cold": 0.18134498596191406, 
+    "warm": -10, 
+    "command": "pigz test63.tar"
+   }, 
+   {
+    "cold": 2.561012029647827, 
+    "warm": 0.09031295776367188, 
+    "command": "chmod +w -R test63/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.569537878036499, 
+    "warm": -10, 
+    "command": "git clone test63 test63.clone"
+   }, 
+   {
+    "cold": 34.28268909454346, 
+    "warm": -10, 
+    "command": "cd test63.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.308001041412354, 
+    "warm": -10, 
+    "command": "cd test63.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7676410675048828, 
+    "warm": 0.04806685447692871, 
+    "command": "du -scm test63.clone"
+   }, 
+   {
+    "cold": 3.803659200668335, 
+    "warm": -10, 
+    "command": "rm -rf test63"
+   }, 
+   {
+    "cold": 1.0733730792999268, 
+    "warm": -10, 
+    "command": "rm -rf test63.clone"
+   }, 
+   {
+    "cold": 0.7401840686798096, 
+    "warm": -10, 
+    "command": "tar -xzf test63.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 64, 
+  "times": [
+   {
+    "cold": 3.357522964477539, 
+    "warm": 0.07189011573791504, 
+    "command": "du -scm test64"
+   }, 
+   {
+    "cold": 12.027614116668701, 
+    "warm": 0.36441493034362793, 
+    "command": "tar -cf test64.tar test64"
+   }, 
+   {
+    "cold": 0.3507990837097168, 
+    "warm": -10, 
+    "command": "pigz test64.tar"
+   }, 
+   {
+    "cold": 2.033949851989746, 
+    "warm": 0.08955502510070801, 
+    "command": "chmod +w -R test64/.git/annex/objects"
+   }, 
+   {
+    "cold": 1.9526240825653076, 
+    "warm": -10, 
+    "command": "git clone test64 test64.clone"
+   }, 
+   {
+    "cold": 33.91783308982849, 
+    "warm": -10, 
+    "command": "cd test64.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.66609001159668, 
+    "warm": -10, 
+    "command": "cd test64.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6560778617858887, 
+    "warm": 0.04249310493469238, 
+    "command": "du -scm test64.clone"
+   }, 
+   {
+    "cold": 3.3212459087371826, 
+    "warm": -10, 
+    "command": "rm -rf test64"
+   }, 
+   {
+    "cold": 0.9719188213348389, 
+    "warm": -10, 
+    "command": "rm -rf test64.clone"
+   }, 
+   {
+    "cold": 0.688546895980835, 
+    "warm": -10, 
+    "command": "tar -xzf test64.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 65, 
+  "times": [
+   {
+    "cold": 3.2224690914154053, 
+    "warm": 0.08133482933044434, 
+    "command": "du -scm test65"
+   }, 
+   {
+    "cold": 12.379791975021362, 
+    "warm": 0.24898099899291992, 
+    "command": "tar -cf test65.tar test65"
+   }, 
+   {
+    "cold": 0.11795711517333984, 
+    "warm": -10, 
+    "command": "pigz test65.tar"
+   }, 
+   {
+    "cold": 2.046865940093994, 
+    "warm": 0.08779501914978027, 
+    "command": "chmod +w -R test65/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.0408711433410645, 
+    "warm": -10, 
+    "command": "git clone test65 test65.clone"
+   }, 
+   {
+    "cold": 36.71511793136597, 
+    "warm": -10, 
+    "command": "cd test65.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.806041955947876, 
+    "warm": -10, 
+    "command": "cd test65.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.8098549842834473, 
+    "warm": 0.0400090217590332, 
+    "command": "du -scm test65.clone"
+   }, 
+   {
+    "cold": 4.0786261558532715, 
+    "warm": -10, 
+    "command": "rm -rf test65"
+   }, 
+   {
+    "cold": 1.037121057510376, 
+    "warm": -10, 
+    "command": "rm -rf test65.clone"
+   }, 
+   {
+    "cold": 0.6580798625946045, 
+    "warm": -10, 
+    "command": "tar -xzf test65.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 66, 
+  "times": [
+   {
+    "cold": 3.497807025909424, 
+    "warm": 0.07606697082519531, 
+    "command": "du -scm test66"
+   }, 
+   {
+    "cold": 12.398444175720215, 
+    "warm": 0.2701549530029297, 
+    "command": "tar -cf test66.tar test66"
+   }, 
+   {
+    "cold": 0.15967202186584473, 
+    "warm": -10, 
+    "command": "pigz test66.tar"
+   }, 
+   {
+    "cold": 1.9987199306488037, 
+    "warm": 0.08547186851501465, 
+    "command": "chmod +w -R test66/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.5318081378936768, 
+    "warm": -10, 
+    "command": "git clone test66 test66.clone"
+   }, 
+   {
+    "cold": 32.922504901885986, 
+    "warm": -10, 
+    "command": "cd test66.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.77010488510132, 
+    "warm": -10, 
+    "command": "cd test66.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5666418075561523, 
+    "warm": 0.036898136138916016, 
+    "command": "du -scm test66.clone"
+   }, 
+   {
+    "cold": 3.7335569858551025, 
+    "warm": -10, 
+    "command": "rm -rf test66"
+   }, 
+   {
+    "cold": 0.8813729286193848, 
+    "warm": -10, 
+    "command": "rm -rf test66.clone"
+   }, 
+   {
+    "cold": 0.7316601276397705, 
+    "warm": -10, 
+    "command": "tar -xzf test66.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 67, 
+  "times": [
+   {
+    "cold": 3.235196113586426, 
+    "warm": 0.0867609977722168, 
+    "command": "du -scm test67"
+   }, 
+   {
+    "cold": 12.317759990692139, 
+    "warm": 0.5136888027191162, 
+    "command": "tar -cf test67.tar test67"
+   }, 
+   {
+    "cold": 0.09866499900817871, 
+    "warm": -10, 
+    "command": "pigz test67.tar"
+   }, 
+   {
+    "cold": 1.840811014175415, 
+    "warm": 0.0746619701385498, 
+    "command": "chmod +w -R test67/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.956882953643799, 
+    "warm": -10, 
+    "command": "git clone test67 test67.clone"
+   }, 
+   {
+    "cold": 38.347893953323364, 
+    "warm": -10, 
+    "command": "cd test67.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.3669490814209, 
+    "warm": -10, 
+    "command": "cd test67.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5876588821411133, 
+    "warm": 0.05264711380004883, 
+    "command": "du -scm test67.clone"
+   }, 
+   {
+    "cold": 3.8294990062713623, 
+    "warm": -10, 
+    "command": "rm -rf test67"
+   }, 
+   {
+    "cold": 0.9267570972442627, 
+    "warm": -10, 
+    "command": "rm -rf test67.clone"
+   }, 
+   {
+    "cold": 0.9133961200714111, 
+    "warm": -10, 
+    "command": "tar -xzf test67.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 68, 
+  "times": [
+   {
+    "cold": 3.477358818054199, 
+    "warm": 0.07755708694458008, 
+    "command": "du -scm test68"
+   }, 
+   {
+    "cold": 12.660505056381226, 
+    "warm": 0.27890801429748535, 
+    "command": "tar -cf test68.tar test68"
+   }, 
+   {
+    "cold": 0.14693212509155273, 
+    "warm": -10, 
+    "command": "pigz test68.tar"
+   }, 
+   {
+    "cold": 2.2637200355529785, 
+    "warm": 0.07765698432922363, 
+    "command": "chmod +w -R test68/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6957600116729736, 
+    "warm": -10, 
+    "command": "git clone test68 test68.clone"
+   }, 
+   {
+    "cold": 34.65250611305237, 
+    "warm": -10, 
+    "command": "cd test68.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.61113715171814, 
+    "warm": -10, 
+    "command": "cd test68.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.584881067276001, 
+    "warm": 0.04817986488342285, 
+    "command": "du -scm test68.clone"
+   }, 
+   {
+    "cold": 4.026562929153442, 
+    "warm": -10, 
+    "command": "rm -rf test68"
+   }, 
+   {
+    "cold": 0.9804890155792236, 
+    "warm": -10, 
+    "command": "rm -rf test68.clone"
+   }, 
+   {
+    "cold": 0.7629518508911133, 
+    "warm": -10, 
+    "command": "tar -xzf test68.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 69, 
+  "times": [
+   {
+    "cold": 3.6620419025421143, 
+    "warm": 0.0880119800567627, 
+    "command": "du -scm test69"
+   }, 
+   {
+    "cold": 11.831589937210083, 
+    "warm": 0.2501838207244873, 
+    "command": "tar -cf test69.tar test69"
+   }, 
+   {
+    "cold": 0.15704107284545898, 
+    "warm": -10, 
+    "command": "pigz test69.tar"
+   }, 
+   {
+    "cold": 1.9988539218902588, 
+    "warm": 0.08124303817749023, 
+    "command": "chmod +w -R test69/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6455419063568115, 
+    "warm": -10, 
+    "command": "git clone test69 test69.clone"
+   }, 
+   {
+    "cold": 34.55813407897949, 
+    "warm": -10, 
+    "command": "cd test69.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.3730251789093, 
+    "warm": -10, 
+    "command": "cd test69.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6742980480194092, 
+    "warm": 0.052156925201416016, 
+    "command": "du -scm test69.clone"
+   }, 
+   {
+    "cold": 3.85811710357666, 
+    "warm": -10, 
+    "command": "rm -rf test69"
+   }, 
+   {
+    "cold": 0.7344927787780762, 
+    "warm": -10, 
+    "command": "rm -rf test69.clone"
+   }, 
+   {
+    "cold": 0.816291093826294, 
+    "warm": -10, 
+    "command": "tar -xzf test69.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 70, 
+  "times": [
+   {
+    "cold": 3.2117321491241455, 
+    "warm": 0.08733987808227539, 
+    "command": "du -scm test70"
+   }, 
+   {
+    "cold": 12.441618204116821, 
+    "warm": 0.25914597511291504, 
+    "command": "tar -cf test70.tar test70"
+   }, 
+   {
+    "cold": 0.14569902420043945, 
+    "warm": -10, 
+    "command": "pigz test70.tar"
+   }, 
+   {
+    "cold": 2.163670063018799, 
+    "warm": 0.0948479175567627, 
+    "command": "chmod +w -R test70/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5954079627990723, 
+    "warm": -10, 
+    "command": "git clone test70 test70.clone"
+   }, 
+   {
+    "cold": 32.562609910964966, 
+    "warm": -10, 
+    "command": "cd test70.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.683709144592285, 
+    "warm": -10, 
+    "command": "cd test70.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7488200664520264, 
+    "warm": 0.05364203453063965, 
+    "command": "du -scm test70.clone"
+   }, 
+   {
+    "cold": 3.9377238750457764, 
+    "warm": -10, 
+    "command": "rm -rf test70"
+   }, 
+   {
+    "cold": 0.8647220134735107, 
+    "warm": -10, 
+    "command": "rm -rf test70.clone"
+   }, 
+   {
+    "cold": 0.6631290912628174, 
+    "warm": -10, 
+    "command": "tar -xzf test70.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 71, 
+  "times": [
+   {
+    "cold": 3.450990915298462, 
+    "warm": 0.08776593208312988, 
+    "command": "du -scm test71"
+   }, 
+   {
+    "cold": 11.96444320678711, 
+    "warm": 0.29990386962890625, 
+    "command": "tar -cf test71.tar test71"
+   }, 
+   {
+    "cold": 0.16270709037780762, 
+    "warm": -10, 
+    "command": "pigz test71.tar"
+   }, 
+   {
+    "cold": 1.9993629455566406, 
+    "warm": 0.07532811164855957, 
+    "command": "chmod +w -R test71/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6550238132476807, 
+    "warm": -10, 
+    "command": "git clone test71 test71.clone"
+   }, 
+   {
+    "cold": 33.3734610080719, 
+    "warm": -10, 
+    "command": "cd test71.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.23401713371277, 
+    "warm": -10, 
+    "command": "cd test71.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6219041347503662, 
+    "warm": 0.04320406913757324, 
+    "command": "du -scm test71.clone"
+   }, 
+   {
+    "cold": 3.6863229274749756, 
+    "warm": -10, 
+    "command": "rm -rf test71"
+   }, 
+   {
+    "cold": 0.7984440326690674, 
+    "warm": -10, 
+    "command": "rm -rf test71.clone"
+   }, 
+   {
+    "cold": 0.7299289703369141, 
+    "warm": -10, 
+    "command": "tar -xzf test71.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 72, 
+  "times": [
+   {
+    "cold": 3.5122828483581543, 
+    "warm": 0.07644295692443848, 
+    "command": "du -scm test72"
+   }, 
+   {
+    "cold": 12.119081974029541, 
+    "warm": 0.27911806106567383, 
+    "command": "tar -cf test72.tar test72"
+   }, 
+   {
+    "cold": 0.15984606742858887, 
+    "warm": -10, 
+    "command": "pigz test72.tar"
+   }, 
+   {
+    "cold": 2.1764440536499023, 
+    "warm": 0.07391595840454102, 
+    "command": "chmod +w -R test72/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.408050060272217, 
+    "warm": -10, 
+    "command": "git clone test72 test72.clone"
+   }, 
+   {
+    "cold": 34.65623593330383, 
+    "warm": -10, 
+    "command": "cd test72.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.035677909851074, 
+    "warm": -10, 
+    "command": "cd test72.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6041967868804932, 
+    "warm": 0.038751840591430664, 
+    "command": "du -scm test72.clone"
+   }, 
+   {
+    "cold": 3.758543014526367, 
+    "warm": -10, 
+    "command": "rm -rf test72"
+   }, 
+   {
+    "cold": 1.031749963760376, 
+    "warm": -10, 
+    "command": "rm -rf test72.clone"
+   }, 
+   {
+    "cold": 0.8950619697570801, 
+    "warm": -10, 
+    "command": "tar -xzf test72.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 73, 
+  "times": [
+   {
+    "cold": 3.8763720989227295, 
+    "warm": 0.07031607627868652, 
+    "command": "du -scm test73"
+   }, 
+   {
+    "cold": 12.436808109283447, 
+    "warm": 0.3615908622741699, 
+    "command": "tar -cf test73.tar test73"
+   }, 
+   {
+    "cold": 0.14631295204162598, 
+    "warm": -10, 
+    "command": "pigz test73.tar"
+   }, 
+   {
+    "cold": 2.1861929893493652, 
+    "warm": 0.07307100296020508, 
+    "command": "chmod +w -R test73/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.658785104751587, 
+    "warm": -10, 
+    "command": "git clone test73 test73.clone"
+   }, 
+   {
+    "cold": 33.641324043273926, 
+    "warm": -10, 
+    "command": "cd test73.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.429866075515747, 
+    "warm": -10, 
+    "command": "cd test73.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6046268939971924, 
+    "warm": 0.043070077896118164, 
+    "command": "du -scm test73.clone"
+   }, 
+   {
+    "cold": 4.3389668464660645, 
+    "warm": -10, 
+    "command": "rm -rf test73"
+   }, 
+   {
+    "cold": 0.8646759986877441, 
+    "warm": -10, 
+    "command": "rm -rf test73.clone"
+   }, 
+   {
+    "cold": 0.8379621505737305, 
+    "warm": -10, 
+    "command": "tar -xzf test73.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 74, 
+  "times": [
+   {
+    "cold": 3.705343008041382, 
+    "warm": 0.07077789306640625, 
+    "command": "du -scm test74"
+   }, 
+   {
+    "cold": 12.428086996078491, 
+    "warm": 0.26900792121887207, 
+    "command": "tar -cf test74.tar test74"
+   }, 
+   {
+    "cold": 0.13921093940734863, 
+    "warm": -10, 
+    "command": "pigz test74.tar"
+   }, 
+   {
+    "cold": 2.0716300010681152, 
+    "warm": 0.09166717529296875, 
+    "command": "chmod +w -R test74/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.877236843109131, 
+    "warm": -10, 
+    "command": "git clone test74 test74.clone"
+   }, 
+   {
+    "cold": 33.54123902320862, 
+    "warm": -10, 
+    "command": "cd test74.clone; git annex get . "
+   }, 
+   {
+    "cold": 25.884926795959473, 
+    "warm": -10, 
+    "command": "cd test74.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6831710338592529, 
+    "warm": 0.05087590217590332, 
+    "command": "du -scm test74.clone"
+   }, 
+   {
+    "cold": 3.6217041015625, 
+    "warm": -10, 
+    "command": "rm -rf test74"
+   }, 
+   {
+    "cold": 0.8762438297271729, 
+    "warm": -10, 
+    "command": "rm -rf test74.clone"
+   }, 
+   {
+    "cold": 0.8953969478607178, 
+    "warm": -10, 
+    "command": "tar -xzf test74.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 75, 
+  "times": [
+   {
+    "cold": 3.517108917236328, 
+    "warm": 0.07407402992248535, 
+    "command": "du -scm test75"
+   }, 
+   {
+    "cold": 12.218299150466919, 
+    "warm": 0.2558860778808594, 
+    "command": "tar -cf test75.tar test75"
+   }, 
+   {
+    "cold": 0.14682221412658691, 
+    "warm": -10, 
+    "command": "pigz test75.tar"
+   }, 
+   {
+    "cold": 2.089416980743408, 
+    "warm": 0.07682299613952637, 
+    "command": "chmod +w -R test75/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.2845659255981445, 
+    "warm": -10, 
+    "command": "git clone test75 test75.clone"
+   }, 
+   {
+    "cold": 36.69660997390747, 
+    "warm": -10, 
+    "command": "cd test75.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.236947774887085, 
+    "warm": -10, 
+    "command": "cd test75.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6384401321411133, 
+    "warm": 0.04277491569519043, 
+    "command": "du -scm test75.clone"
+   }, 
+   {
+    "cold": 3.661090135574341, 
+    "warm": -10, 
+    "command": "rm -rf test75"
+   }, 
+   {
+    "cold": 0.8480160236358643, 
+    "warm": -10, 
+    "command": "rm -rf test75.clone"
+   }, 
+   {
+    "cold": 0.9334619045257568, 
+    "warm": -10, 
+    "command": "tar -xzf test75.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 76, 
+  "times": [
+   {
+    "cold": 3.969228982925415, 
+    "warm": 0.06985592842102051, 
+    "command": "du -scm test76"
+   }, 
+   {
+    "cold": 12.861471891403198, 
+    "warm": 0.25992918014526367, 
+    "command": "tar -cf test76.tar test76"
+   }, 
+   {
+    "cold": 0.14424395561218262, 
+    "warm": -10, 
+    "command": "pigz test76.tar"
+   }, 
+   {
+    "cold": 2.8790640830993652, 
+    "warm": 0.08384013175964355, 
+    "command": "chmod +w -R test76/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.433189868927002, 
+    "warm": -10, 
+    "command": "git clone test76 test76.clone"
+   }, 
+   {
+    "cold": 34.94713497161865, 
+    "warm": -10, 
+    "command": "cd test76.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.117430925369263, 
+    "warm": -10, 
+    "command": "cd test76.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6222400665283203, 
+    "warm": 0.034307003021240234, 
+    "command": "du -scm test76.clone"
+   }, 
+   {
+    "cold": 4.60524582862854, 
+    "warm": -10, 
+    "command": "rm -rf test76"
+   }, 
+   {
+    "cold": 0.9946229457855225, 
+    "warm": -10, 
+    "command": "rm -rf test76.clone"
+   }, 
+   {
+    "cold": 0.8134939670562744, 
+    "warm": -10, 
+    "command": "tar -xzf test76.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 77, 
+  "times": [
+   {
+    "cold": 3.430657148361206, 
+    "warm": 0.07118988037109375, 
+    "command": "du -scm test77"
+   }, 
+   {
+    "cold": 12.066524028778076, 
+    "warm": 0.24598002433776855, 
+    "command": "tar -cf test77.tar test77"
+   }, 
+   {
+    "cold": 0.16782379150390625, 
+    "warm": -10, 
+    "command": "pigz test77.tar"
+   }, 
+   {
+    "cold": 1.988698959350586, 
+    "warm": 0.0866098403930664, 
+    "command": "chmod +w -R test77/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.733438014984131, 
+    "warm": -10, 
+    "command": "git clone test77 test77.clone"
+   }, 
+   {
+    "cold": 39.412949085235596, 
+    "warm": -10, 
+    "command": "cd test77.clone; git annex get . "
+   }, 
+   {
+    "cold": 30.23042106628418, 
+    "warm": -10, 
+    "command": "cd test77.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7275760173797607, 
+    "warm": 0.053759098052978516, 
+    "command": "du -scm test77.clone"
+   }, 
+   {
+    "cold": 3.84879994392395, 
+    "warm": -10, 
+    "command": "rm -rf test77"
+   }, 
+   {
+    "cold": 0.788316011428833, 
+    "warm": -10, 
+    "command": "rm -rf test77.clone"
+   }, 
+   {
+    "cold": 1.1168508529663086, 
+    "warm": -10, 
+    "command": "tar -xzf test77.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 78, 
+  "times": [
+   {
+    "cold": 3.1246118545532227, 
+    "warm": 0.07254219055175781, 
+    "command": "du -scm test78"
+   }, 
+   {
+    "cold": 11.978142976760864, 
+    "warm": 0.25908517837524414, 
+    "command": "tar -cf test78.tar test78"
+   }, 
+   {
+    "cold": 0.11714410781860352, 
+    "warm": -10, 
+    "command": "pigz test78.tar"
+   }, 
+   {
+    "cold": 2.2357900142669678, 
+    "warm": 0.0785679817199707, 
+    "command": "chmod +w -R test78/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.3810360431671143, 
+    "warm": -10, 
+    "command": "git clone test78 test78.clone"
+   }, 
+   {
+    "cold": 35.354215145111084, 
+    "warm": -10, 
+    "command": "cd test78.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.26798701286316, 
+    "warm": -10, 
+    "command": "cd test78.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6394381523132324, 
+    "warm": 0.05041098594665527, 
+    "command": "du -scm test78.clone"
+   }, 
+   {
+    "cold": 3.6318490505218506, 
+    "warm": -10, 
+    "command": "rm -rf test78"
+   }, 
+   {
+    "cold": 0.951772928237915, 
+    "warm": -10, 
+    "command": "rm -rf test78.clone"
+   }, 
+   {
+    "cold": 0.9313068389892578, 
+    "warm": -10, 
+    "command": "tar -xzf test78.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 79, 
+  "times": [
+   {
+    "cold": 3.4954681396484375, 
+    "warm": 0.0743398666381836, 
+    "command": "du -scm test79"
+   }, 
+   {
+    "cold": 11.728210926055908, 
+    "warm": 0.2523200511932373, 
+    "command": "tar -cf test79.tar test79"
+   }, 
+   {
+    "cold": 0.11899495124816895, 
+    "warm": -10, 
+    "command": "pigz test79.tar"
+   }, 
+   {
+    "cold": 1.990631103515625, 
+    "warm": 0.07821989059448242, 
+    "command": "chmod +w -R test79/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5881009101867676, 
+    "warm": -10, 
+    "command": "git clone test79 test79.clone"
+   }, 
+   {
+    "cold": 33.37985301017761, 
+    "warm": -10, 
+    "command": "cd test79.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.962625980377197, 
+    "warm": -10, 
+    "command": "cd test79.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5417630672454834, 
+    "warm": 0.04541802406311035, 
+    "command": "du -scm test79.clone"
+   }, 
+   {
+    "cold": 3.6408419609069824, 
+    "warm": -10, 
+    "command": "rm -rf test79"
+   }, 
+   {
+    "cold": 0.8536899089813232, 
+    "warm": -10, 
+    "command": "rm -rf test79.clone"
+   }, 
+   {
+    "cold": 0.7381870746612549, 
+    "warm": -10, 
+    "command": "tar -xzf test79.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 80, 
+  "times": [
+   {
+    "cold": 3.6980319023132324, 
+    "warm": 0.076416015625, 
+    "command": "du -scm test80"
+   }, 
+   {
+    "cold": 11.577069997787476, 
+    "warm": 0.24239087104797363, 
+    "command": "tar -cf test80.tar test80"
+   }, 
+   {
+    "cold": 0.13855314254760742, 
+    "warm": -10, 
+    "command": "pigz test80.tar"
+   }, 
+   {
+    "cold": 2.1792728900909424, 
+    "warm": 0.07210803031921387, 
+    "command": "chmod +w -R test80/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.650771141052246, 
+    "warm": -10, 
+    "command": "git clone test80 test80.clone"
+   }, 
+   {
+    "cold": 31.617305994033813, 
+    "warm": -10, 
+    "command": "cd test80.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.839767932891846, 
+    "warm": -10, 
+    "command": "cd test80.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5928771495819092, 
+    "warm": 0.04158806800842285, 
+    "command": "du -scm test80.clone"
+   }, 
+   {
+    "cold": 3.8457858562469482, 
+    "warm": -10, 
+    "command": "rm -rf test80"
+   }, 
+   {
+    "cold": 1.0023889541625977, 
+    "warm": -10, 
+    "command": "rm -rf test80.clone"
+   }, 
+   {
+    "cold": 0.6914138793945312, 
+    "warm": -10, 
+    "command": "tar -xzf test80.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 81, 
+  "times": [
+   {
+    "cold": 3.676069974899292, 
+    "warm": 0.07979798316955566, 
+    "command": "du -scm test81"
+   }, 
+   {
+    "cold": 11.934626817703247, 
+    "warm": 0.26488709449768066, 
+    "command": "tar -cf test81.tar test81"
+   }, 
+   {
+    "cold": 0.1163029670715332, 
+    "warm": -10, 
+    "command": "pigz test81.tar"
+   }, 
+   {
+    "cold": 2.1100850105285645, 
+    "warm": 0.06878900527954102, 
+    "command": "chmod +w -R test81/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.9683330059051514, 
+    "warm": -10, 
+    "command": "git clone test81 test81.clone"
+   }, 
+   {
+    "cold": 34.10750699043274, 
+    "warm": -10, 
+    "command": "cd test81.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.988457918167114, 
+    "warm": -10, 
+    "command": "cd test81.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5394389629364014, 
+    "warm": 0.044302940368652344, 
+    "command": "du -scm test81.clone"
+   }, 
+   {
+    "cold": 3.984949827194214, 
+    "warm": -10, 
+    "command": "rm -rf test81"
+   }, 
+   {
+    "cold": 0.928325891494751, 
+    "warm": -10, 
+    "command": "rm -rf test81.clone"
+   }, 
+   {
+    "cold": 0.6772751808166504, 
+    "warm": -10, 
+    "command": "tar -xzf test81.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 82, 
+  "times": [
+   {
+    "cold": 3.375527858734131, 
+    "warm": 0.0852820873260498, 
+    "command": "du -scm test82"
+   }, 
+   {
+    "cold": 11.332648038864136, 
+    "warm": 0.4106740951538086, 
+    "command": "tar -cf test82.tar test82"
+   }, 
+   {
+    "cold": 0.14668703079223633, 
+    "warm": -10, 
+    "command": "pigz test82.tar"
+   }, 
+   {
+    "cold": 2.0621209144592285, 
+    "warm": 0.0789179801940918, 
+    "command": "chmod +w -R test82/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.651782989501953, 
+    "warm": -10, 
+    "command": "git clone test82 test82.clone"
+   }, 
+   {
+    "cold": 37.29449510574341, 
+    "warm": -10, 
+    "command": "cd test82.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.319204092025757, 
+    "warm": -10, 
+    "command": "cd test82.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5975000858306885, 
+    "warm": 0.037602901458740234, 
+    "command": "du -scm test82.clone"
+   }, 
+   {
+    "cold": 3.9082190990448, 
+    "warm": -10, 
+    "command": "rm -rf test82"
+   }, 
+   {
+    "cold": 0.8667728900909424, 
+    "warm": -10, 
+    "command": "rm -rf test82.clone"
+   }, 
+   {
+    "cold": 0.7671101093292236, 
+    "warm": -10, 
+    "command": "tar -xzf test82.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 83, 
+  "times": [
+   {
+    "cold": 4.365869998931885, 
+    "warm": 0.08788108825683594, 
+    "command": "du -scm test83"
+   }, 
+   {
+    "cold": 14.288849830627441, 
+    "warm": 0.325761079788208, 
+    "command": "tar -cf test83.tar test83"
+   }, 
+   {
+    "cold": 0.12124991416931152, 
+    "warm": -10, 
+    "command": "pigz test83.tar"
+   }, 
+   {
+    "cold": 3.133939027786255, 
+    "warm": 0.07220005989074707, 
+    "command": "chmod +w -R test83/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.6955268383026123, 
+    "warm": -10, 
+    "command": "git clone test83 test83.clone"
+   }, 
+   {
+    "cold": 38.024752140045166, 
+    "warm": -10, 
+    "command": "cd test83.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.240546941757202, 
+    "warm": -10, 
+    "command": "cd test83.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6685669422149658, 
+    "warm": 0.03647589683532715, 
+    "command": "du -scm test83.clone"
+   }, 
+   {
+    "cold": 4.6240928173065186, 
+    "warm": -10, 
+    "command": "rm -rf test83"
+   }, 
+   {
+    "cold": 0.8846719264984131, 
+    "warm": -10, 
+    "command": "rm -rf test83.clone"
+   }, 
+   {
+    "cold": 1.0395569801330566, 
+    "warm": -10, 
+    "command": "tar -xzf test83.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 84, 
+  "times": [
+   {
+    "cold": 3.5681099891662598, 
+    "warm": 0.07423114776611328, 
+    "command": "du -scm test84"
+   }, 
+   {
+    "cold": 12.337059020996094, 
+    "warm": 0.2537190914154053, 
+    "command": "tar -cf test84.tar test84"
+   }, 
+   {
+    "cold": 0.10541701316833496, 
+    "warm": -10, 
+    "command": "pigz test84.tar"
+   }, 
+   {
+    "cold": 2.2869231700897217, 
+    "warm": 0.0799558162689209, 
+    "command": "chmod +w -R test84/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.7435219287872314, 
+    "warm": -10, 
+    "command": "git clone test84 test84.clone"
+   }, 
+   {
+    "cold": 35.47001504898071, 
+    "warm": -10, 
+    "command": "cd test84.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.24687695503235, 
+    "warm": -10, 
+    "command": "cd test84.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.652209997177124, 
+    "warm": 0.05385088920593262, 
+    "command": "du -scm test84.clone"
+   }, 
+   {
+    "cold": 3.839782953262329, 
+    "warm": -10, 
+    "command": "rm -rf test84"
+   }, 
+   {
+    "cold": 0.9277698993682861, 
+    "warm": -10, 
+    "command": "rm -rf test84.clone"
+   }, 
+   {
+    "cold": 0.9122660160064697, 
+    "warm": -10, 
+    "command": "tar -xzf test84.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 85, 
+  "times": [
+   {
+    "cold": 4.820604085922241, 
+    "warm": 0.0758829116821289, 
+    "command": "du -scm test85"
+   }, 
+   {
+    "cold": 16.707191944122314, 
+    "warm": 0.2603440284729004, 
+    "command": "tar -cf test85.tar test85"
+   }, 
+   {
+    "cold": 0.14301705360412598, 
+    "warm": -10, 
+    "command": "pigz test85.tar"
+   }, 
+   {
+    "cold": 4.179188013076782, 
+    "warm": 0.08614087104797363, 
+    "command": "chmod +w -R test85/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.031377077102661, 
+    "warm": -10, 
+    "command": "git clone test85 test85.clone"
+   }, 
+   {
+    "cold": 39.99706196784973, 
+    "warm": -10, 
+    "command": "cd test85.clone; git annex get . "
+   }, 
+   {
+    "cold": 30.947850942611694, 
+    "warm": -10, 
+    "command": "cd test85.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.543036937713623, 
+    "warm": 0.05193519592285156, 
+    "command": "du -scm test85.clone"
+   }, 
+   {
+    "cold": 6.308356046676636, 
+    "warm": -10, 
+    "command": "rm -rf test85"
+   }, 
+   {
+    "cold": 0.8432619571685791, 
+    "warm": -10, 
+    "command": "rm -rf test85.clone"
+   }, 
+   {
+    "cold": 1.8306951522827148, 
+    "warm": -10, 
+    "command": "tar -xzf test85.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 86, 
+  "times": [
+   {
+    "cold": 4.408252000808716, 
+    "warm": 0.06889986991882324, 
+    "command": "du -scm test86"
+   }, 
+   {
+    "cold": 13.579845190048218, 
+    "warm": 0.2669680118560791, 
+    "command": "tar -cf test86.tar test86"
+   }, 
+   {
+    "cold": 0.14520478248596191, 
+    "warm": -10, 
+    "command": "pigz test86.tar"
+   }, 
+   {
+    "cold": 3.1538751125335693, 
+    "warm": 0.07728195190429688, 
+    "command": "chmod +w -R test86/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.4442150592803955, 
+    "warm": -10, 
+    "command": "git clone test86 test86.clone"
+   }, 
+   {
+    "cold": 41.50110602378845, 
+    "warm": -10, 
+    "command": "cd test86.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.784367084503174, 
+    "warm": -10, 
+    "command": "cd test86.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6667568683624268, 
+    "warm": 0.04414200782775879, 
+    "command": "du -scm test86.clone"
+   }, 
+   {
+    "cold": 4.658251047134399, 
+    "warm": -10, 
+    "command": "rm -rf test86"
+   }, 
+   {
+    "cold": 0.9049971103668213, 
+    "warm": -10, 
+    "command": "rm -rf test86.clone"
+   }, 
+   {
+    "cold": 1.2447009086608887, 
+    "warm": -10, 
+    "command": "tar -xzf test86.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 87, 
+  "times": [
+   {
+    "cold": 3.36118483543396, 
+    "warm": 0.08738398551940918, 
+    "command": "du -scm test87"
+   }, 
+   {
+    "cold": 12.054214000701904, 
+    "warm": 0.25635814666748047, 
+    "command": "tar -cf test87.tar test87"
+   }, 
+   {
+    "cold": 0.14916300773620605, 
+    "warm": -10, 
+    "command": "pigz test87.tar"
+   }, 
+   {
+    "cold": 1.8484950065612793, 
+    "warm": 0.0791780948638916, 
+    "command": "chmod +w -R test87/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.2822139263153076, 
+    "warm": -10, 
+    "command": "git clone test87 test87.clone"
+   }, 
+   {
+    "cold": 34.418053150177, 
+    "warm": -10, 
+    "command": "cd test87.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.537847995758057, 
+    "warm": -10, 
+    "command": "cd test87.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7099659442901611, 
+    "warm": 0.04043078422546387, 
+    "command": "du -scm test87.clone"
+   }, 
+   {
+    "cold": 3.8631458282470703, 
+    "warm": -10, 
+    "command": "rm -rf test87"
+   }, 
+   {
+    "cold": 0.9372398853302002, 
+    "warm": -10, 
+    "command": "rm -rf test87.clone"
+   }, 
+   {
+    "cold": 0.7722671031951904, 
+    "warm": -10, 
+    "command": "tar -xzf test87.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 88, 
+  "times": [
+   {
+    "cold": 3.7239670753479004, 
+    "warm": 0.07284998893737793, 
+    "command": "du -scm test88"
+   }, 
+   {
+    "cold": 11.949854135513306, 
+    "warm": 0.2575418949127197, 
+    "command": "tar -cf test88.tar test88"
+   }, 
+   {
+    "cold": 0.14178204536437988, 
+    "warm": -10, 
+    "command": "pigz test88.tar"
+   }, 
+   {
+    "cold": 2.22379994392395, 
+    "warm": 0.07481598854064941, 
+    "command": "chmod +w -R test88/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.5224008560180664, 
+    "warm": -10, 
+    "command": "git clone test88 test88.clone"
+   }, 
+   {
+    "cold": 35.15476107597351, 
+    "warm": -10, 
+    "command": "cd test88.clone; git annex get . "
+   }, 
+   {
+    "cold": 29.09311294555664, 
+    "warm": -10, 
+    "command": "cd test88.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.8196301460266113, 
+    "warm": 0.0441741943359375, 
+    "command": "du -scm test88.clone"
+   }, 
+   {
+    "cold": 3.874488115310669, 
+    "warm": -10, 
+    "command": "rm -rf test88"
+   }, 
+   {
+    "cold": 0.9569978713989258, 
+    "warm": -10, 
+    "command": "rm -rf test88.clone"
+   }, 
+   {
+    "cold": 0.7597601413726807, 
+    "warm": -10, 
+    "command": "tar -xzf test88.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 89, 
+  "times": [
+   {
+    "cold": 3.3831491470336914, 
+    "warm": 0.08499407768249512, 
+    "command": "du -scm test89"
+   }, 
+   {
+    "cold": 12.375860929489136, 
+    "warm": 0.4506499767303467, 
+    "command": "tar -cf test89.tar test89"
+   }, 
+   {
+    "cold": 0.15026307106018066, 
+    "warm": -10, 
+    "command": "pigz test89.tar"
+   }, 
+   {
+    "cold": 2.2133610248565674, 
+    "warm": 0.07665205001831055, 
+    "command": "chmod +w -R test89/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.2112748622894287, 
+    "warm": -10, 
+    "command": "git clone test89 test89.clone"
+   }, 
+   {
+    "cold": 34.74217700958252, 
+    "warm": -10, 
+    "command": "cd test89.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.34433102607727, 
+    "warm": -10, 
+    "command": "cd test89.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6582090854644775, 
+    "warm": 0.04879307746887207, 
+    "command": "du -scm test89.clone"
+   }, 
+   {
+    "cold": 3.996772050857544, 
+    "warm": -10, 
+    "command": "rm -rf test89"
+   }, 
+   {
+    "cold": 0.81638503074646, 
+    "warm": -10, 
+    "command": "rm -rf test89.clone"
+   }, 
+   {
+    "cold": 1.1933820247650146, 
+    "warm": -10, 
+    "command": "tar -xzf test89.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 90, 
+  "times": [
+   {
+    "cold": 3.608099937438965, 
+    "warm": 0.08943009376525879, 
+    "command": "du -scm test90"
+   }, 
+   {
+    "cold": 11.872551202774048, 
+    "warm": 0.37143492698669434, 
+    "command": "tar -cf test90.tar test90"
+   }, 
+   {
+    "cold": 0.10933589935302734, 
+    "warm": -10, 
+    "command": "pigz test90.tar"
+   }, 
+   {
+    "cold": 2.2888691425323486, 
+    "warm": 0.08286285400390625, 
+    "command": "chmod +w -R test90/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.3501718044281006, 
+    "warm": -10, 
+    "command": "git clone test90 test90.clone"
+   }, 
+   {
+    "cold": 31.54847288131714, 
+    "warm": -10, 
+    "command": "cd test90.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.749855995178223, 
+    "warm": -10, 
+    "command": "cd test90.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6734528541564941, 
+    "warm": 0.05230212211608887, 
+    "command": "du -scm test90.clone"
+   }, 
+   {
+    "cold": 4.203345775604248, 
+    "warm": -10, 
+    "command": "rm -rf test90"
+   }, 
+   {
+    "cold": 0.8519721031188965, 
+    "warm": -10, 
+    "command": "rm -rf test90.clone"
+   }, 
+   {
+    "cold": 0.978065013885498, 
+    "warm": -10, 
+    "command": "tar -xzf test90.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 91, 
+  "times": [
+   {
+    "cold": 3.758449077606201, 
+    "warm": 0.06782007217407227, 
+    "command": "du -scm test91"
+   }, 
+   {
+    "cold": 11.931238889694214, 
+    "warm": 0.263185977935791, 
+    "command": "tar -cf test91.tar test91"
+   }, 
+   {
+    "cold": 0.1430070400238037, 
+    "warm": -10, 
+    "command": "pigz test91.tar"
+   }, 
+   {
+    "cold": 2.2779901027679443, 
+    "warm": 0.0778799057006836, 
+    "command": "chmod +w -R test91/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.4414560794830322, 
+    "warm": -10, 
+    "command": "git clone test91 test91.clone"
+   }, 
+   {
+    "cold": 34.795897006988525, 
+    "warm": -10, 
+    "command": "cd test91.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.57191514968872, 
+    "warm": -10, 
+    "command": "cd test91.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.7416090965270996, 
+    "warm": 0.0425570011138916, 
+    "command": "du -scm test91.clone"
+   }, 
+   {
+    "cold": 4.342514991760254, 
+    "warm": -10, 
+    "command": "rm -rf test91"
+   }, 
+   {
+    "cold": 0.9304800033569336, 
+    "warm": -10, 
+    "command": "rm -rf test91.clone"
+   }, 
+   {
+    "cold": 0.8054649829864502, 
+    "warm": -10, 
+    "command": "tar -xzf test91.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 92, 
+  "times": [
+   {
+    "cold": 3.701850175857544, 
+    "warm": 0.07899785041809082, 
+    "command": "du -scm test92"
+   }, 
+   {
+    "cold": 13.267707109451294, 
+    "warm": 0.2611680030822754, 
+    "command": "tar -cf test92.tar test92"
+   }, 
+   {
+    "cold": 0.13747501373291016, 
+    "warm": -10, 
+    "command": "pigz test92.tar"
+   }, 
+   {
+    "cold": 3.0383970737457275, 
+    "warm": 0.08274292945861816, 
+    "command": "chmod +w -R test92/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.74242901802063, 
+    "warm": -10, 
+    "command": "git clone test92 test92.clone"
+   }, 
+   {
+    "cold": 36.1775848865509, 
+    "warm": -10, 
+    "command": "cd test92.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.65582799911499, 
+    "warm": -10, 
+    "command": "cd test92.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6465520858764648, 
+    "warm": 0.05362701416015625, 
+    "command": "du -scm test92.clone"
+   }, 
+   {
+    "cold": 4.227097034454346, 
+    "warm": -10, 
+    "command": "rm -rf test92"
+   }, 
+   {
+    "cold": 0.920687198638916, 
+    "warm": -10, 
+    "command": "rm -rf test92.clone"
+   }, 
+   {
+    "cold": 1.0979340076446533, 
+    "warm": -10, 
+    "command": "tar -xzf test92.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 93, 
+  "times": [
+   {
+    "cold": 3.3270881175994873, 
+    "warm": 0.07214689254760742, 
+    "command": "du -scm test93"
+   }, 
+   {
+    "cold": 12.099910974502563, 
+    "warm": 0.2671217918395996, 
+    "command": "tar -cf test93.tar test93"
+   }, 
+   {
+    "cold": 0.14199185371398926, 
+    "warm": -10, 
+    "command": "pigz test93.tar"
+   }, 
+   {
+    "cold": 2.292781114578247, 
+    "warm": 0.07273101806640625, 
+    "command": "chmod +w -R test93/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.1901891231536865, 
+    "warm": -10, 
+    "command": "git clone test93 test93.clone"
+   }, 
+   {
+    "cold": 35.93939805030823, 
+    "warm": -10, 
+    "command": "cd test93.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.710745811462402, 
+    "warm": -10, 
+    "command": "cd test93.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6160728931427002, 
+    "warm": 0.043710947036743164, 
+    "command": "du -scm test93.clone"
+   }, 
+   {
+    "cold": 3.2038111686706543, 
+    "warm": -10, 
+    "command": "rm -rf test93"
+   }, 
+   {
+    "cold": 1.133721113204956, 
+    "warm": -10, 
+    "command": "rm -rf test93.clone"
+   }, 
+   {
+    "cold": 0.6892538070678711, 
+    "warm": -10, 
+    "command": "tar -xzf test93.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 94, 
+  "times": [
+   {
+    "cold": 3.3612611293792725, 
+    "warm": 0.07173490524291992, 
+    "command": "du -scm test94"
+   }, 
+   {
+    "cold": 12.055957078933716, 
+    "warm": 0.2755711078643799, 
+    "command": "tar -cf test94.tar test94"
+   }, 
+   {
+    "cold": 0.1517479419708252, 
+    "warm": -10, 
+    "command": "pigz test94.tar"
+   }, 
+   {
+    "cold": 2.117910146713257, 
+    "warm": 0.08618807792663574, 
+    "command": "chmod +w -R test94/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.9406239986419678, 
+    "warm": -10, 
+    "command": "git clone test94 test94.clone"
+   }, 
+   {
+    "cold": 32.985599994659424, 
+    "warm": -10, 
+    "command": "cd test94.clone; git annex get . "
+   }, 
+   {
+    "cold": 28.242733001708984, 
+    "warm": -10, 
+    "command": "cd test94.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6140568256378174, 
+    "warm": 0.05344200134277344, 
+    "command": "du -scm test94.clone"
+   }, 
+   {
+    "cold": 3.988067150115967, 
+    "warm": -10, 
+    "command": "rm -rf test94"
+   }, 
+   {
+    "cold": 0.8625731468200684, 
+    "warm": -10, 
+    "command": "rm -rf test94.clone"
+   }, 
+   {
+    "cold": 0.66615891456604, 
+    "warm": -10, 
+    "command": "tar -xzf test94.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 95, 
+  "times": [
+   {
+    "cold": 3.5500190258026123, 
+    "warm": 0.0729210376739502, 
+    "command": "du -scm test95"
+   }, 
+   {
+    "cold": 12.268561124801636, 
+    "warm": 0.2710530757904053, 
+    "command": "tar -cf test95.tar test95"
+   }, 
+   {
+    "cold": 0.13204097747802734, 
+    "warm": -10, 
+    "command": "pigz test95.tar"
+   }, 
+   {
+    "cold": 2.189438819885254, 
+    "warm": 0.07804989814758301, 
+    "command": "chmod +w -R test95/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.7956089973449707, 
+    "warm": -10, 
+    "command": "git clone test95 test95.clone"
+   }, 
+   {
+    "cold": 34.66829204559326, 
+    "warm": -10, 
+    "command": "cd test95.clone; git annex get . "
+   }, 
+   {
+    "cold": 27.15768599510193, 
+    "warm": -10, 
+    "command": "cd test95.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6294810771942139, 
+    "warm": 0.05472302436828613, 
+    "command": "du -scm test95.clone"
+   }, 
+   {
+    "cold": 3.9655280113220215, 
+    "warm": -10, 
+    "command": "rm -rf test95"
+   }, 
+   {
+    "cold": 0.8532130718231201, 
+    "warm": -10, 
+    "command": "rm -rf test95.clone"
+   }, 
+   {
+    "cold": 0.7175061702728271, 
+    "warm": -10, 
+    "command": "tar -xzf test95.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 96, 
+  "times": [
+   {
+    "cold": 4.051748037338257, 
+    "warm": 0.08254003524780273, 
+    "command": "du -scm test96"
+   }, 
+   {
+    "cold": 12.30629301071167, 
+    "warm": 0.49263691902160645, 
+    "command": "tar -cf test96.tar test96"
+   }, 
+   {
+    "cold": 0.14129996299743652, 
+    "warm": -10, 
+    "command": "pigz test96.tar"
+   }, 
+   {
+    "cold": 2.20693302154541, 
+    "warm": 0.09022998809814453, 
+    "command": "chmod +w -R test96/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.4487998485565186, 
+    "warm": -10, 
+    "command": "git clone test96 test96.clone"
+   }, 
+   {
+    "cold": 35.50080418586731, 
+    "warm": -10, 
+    "command": "cd test96.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.75521492958069, 
+    "warm": -10, 
+    "command": "cd test96.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.5675890445709229, 
+    "warm": 0.05078387260437012, 
+    "command": "du -scm test96.clone"
+   }, 
+   {
+    "cold": 4.496104001998901, 
+    "warm": -10, 
+    "command": "rm -rf test96"
+   }, 
+   {
+    "cold": 0.8670730590820312, 
+    "warm": -10, 
+    "command": "rm -rf test96.clone"
+   }, 
+   {
+    "cold": 0.8540210723876953, 
+    "warm": -10, 
+    "command": "tar -xzf test96.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 97, 
+  "times": [
+   {
+    "cold": 4.173933029174805, 
+    "warm": 0.0770421028137207, 
+    "command": "du -scm test97"
+   }, 
+   {
+    "cold": 12.902266025543213, 
+    "warm": 0.2561359405517578, 
+    "command": "tar -cf test97.tar test97"
+   }, 
+   {
+    "cold": 0.1546950340270996, 
+    "warm": -10, 
+    "command": "pigz test97.tar"
+   }, 
+   {
+    "cold": 2.3904879093170166, 
+    "warm": 0.08629918098449707, 
+    "command": "chmod +w -R test97/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.561039924621582, 
+    "warm": -10, 
+    "command": "git clone test97 test97.clone"
+   }, 
+   {
+    "cold": 33.47108721733093, 
+    "warm": -10, 
+    "command": "cd test97.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.380061149597168, 
+    "warm": -10, 
+    "command": "cd test97.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6335852146148682, 
+    "warm": 0.049246788024902344, 
+    "command": "du -scm test97.clone"
+   }, 
+   {
+    "cold": 4.41358208656311, 
+    "warm": -10, 
+    "command": "rm -rf test97"
+   }, 
+   {
+    "cold": 0.8900430202484131, 
+    "warm": -10, 
+    "command": "rm -rf test97.clone"
+   }, 
+   {
+    "cold": 0.9354631900787354, 
+    "warm": -10, 
+    "command": "tar -xzf test97.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 98, 
+  "times": [
+   {
+    "cold": 3.6403651237487793, 
+    "warm": 0.07899999618530273, 
+    "command": "du -scm test98"
+   }, 
+   {
+    "cold": 11.81364917755127, 
+    "warm": 0.2656278610229492, 
+    "command": "tar -cf test98.tar test98"
+   }, 
+   {
+    "cold": 0.13041901588439941, 
+    "warm": -10, 
+    "command": "pigz test98.tar"
+   }, 
+   {
+    "cold": 2.3525729179382324, 
+    "warm": 0.06912803649902344, 
+    "command": "chmod +w -R test98/.git/annex/objects"
+   }, 
+   {
+    "cold": 2.9648780822753906, 
+    "warm": -10, 
+    "command": "git clone test98 test98.clone"
+   }, 
+   {
+    "cold": 36.24791884422302, 
+    "warm": -10, 
+    "command": "cd test98.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.48067808151245, 
+    "warm": -10, 
+    "command": "cd test98.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.570033073425293, 
+    "warm": 0.05364108085632324, 
+    "command": "du -scm test98.clone"
+   }, 
+   {
+    "cold": 3.486065149307251, 
+    "warm": -10, 
+    "command": "rm -rf test98"
+   }, 
+   {
+    "cold": 0.975039005279541, 
+    "warm": -10, 
+    "command": "rm -rf test98.clone"
+   }, 
+   {
+    "cold": 0.7303240299224854, 
+    "warm": -10, 
+    "command": "tar -xzf test98.tar.gz"
+   }
+  ]
+ }, 
+ {
+  "test_repo": "simpleannex_ndirs=20_nfiles=100", 
+  "fs": "<class '__main__.EXT4'>_MD_raid6", 
+  "run": 99, 
+  "times": [
+   {
+    "cold": 3.27018404006958, 
+    "warm": 0.07202386856079102, 
+    "command": "du -scm test99"
+   }, 
+   {
+    "cold": 12.207077026367188, 
+    "warm": 0.23454809188842773, 
+    "command": "tar -cf test99.tar test99"
+   }, 
+   {
+    "cold": 0.12289190292358398, 
+    "warm": -10, 
+    "command": "pigz test99.tar"
+   }, 
+   {
+    "cold": 2.08154296875, 
+    "warm": 0.07794904708862305, 
+    "command": "chmod +w -R test99/.git/annex/objects"
+   }, 
+   {
+    "cold": 3.547991991043091, 
+    "warm": -10, 
+    "command": "git clone test99 test99.clone"
+   }, 
+   {
+    "cold": 36.4559280872345, 
+    "warm": -10, 
+    "command": "cd test99.clone; git annex get . "
+   }, 
+   {
+    "cold": 26.66580891609192, 
+    "warm": -10, 
+    "command": "cd test99.clone; git annex drop . "
+   }, 
+   {
+    "cold": 0.6771109104156494, 
+    "warm": 0.0545809268951416, 
+    "command": "du -scm test99.clone"
+   }, 
+   {
+    "cold": 3.5423080921173096, 
+    "warm": -10, 
+    "command": "rm -rf test99"
+   }, 
+   {
+    "cold": 0.8390710353851318, 
+    "warm": -10, 
+    "command": "rm -rf test99.clone"
+   }, 
+   {
+    "cold": 0.9333579540252686, 
+    "warm": -10, 
+    "command": "tar -xzf test99.tar.gz"
+   }
+  ]
+ }
+]
